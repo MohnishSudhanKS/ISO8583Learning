@@ -1,0 +1,50 @@
+Definition:
+
+Bitmaps are fundamental components of ISO 8583 messages used to indicate the presence or absence of data elements within the message
+
+Bitmaps indicate the presence or absence of data elements in ISO 8583 messages
+Primary Bitmap covers the first 64 data elements, while the Secondary Bitmap extends beyond
+Efficiently represents data element presence, optimizing message size and processing
+
+3230058020C092003030303030303030
+
+0011001000110000000001011000000000100000110000001001001000000000
+
+
+### Slide: Participants in an ISO Message
+
+**Title: Participants in an ISO Message**
+
+**Content:**
+
+1. **Introduction:**
+   - An ISO 8583 message involves various participants in its lifecycle, ensuring the smooth processing of electronic financial transactions.
+
+2. **Sender:**
+   - The Sender initiates the ISO message transmission.
+   - It can be a financial institution, ATM, point-of-sale terminal, or any entity generating the ISO message.
+
+3. **Acquirer:**
+   - The Acquirer is the financial institution or entity that processes transactions on behalf of the merchant.
+   - In the context of ISO 8583, the Acquirer typically receives authorization requests from the Sender.
+
+4. **Issuer:**
+   - The Issuer is the financial institution that issues cards to cardholders.
+   - In ISO 8583, the Issuer receives authorization requests from the Acquirer and responds with authorization responses.
+
+5. **Recipient:**
+   - The Recipient is the intended receiver of the ISO message.
+   - It can be the Acquirer, Issuer, or any entity designated to receive and process the message.
+
+6. **Intermediaries:**
+   - Intermediaries may exist between the Sender and Recipient to facilitate message routing and processing.
+   - These intermediaries can include payment processors, switches, and networks that handle message transmission.
+
+**Key Points:**
+- Participants in an ISO message include the Sender, Acquirer, Issuer, Recipient, and Intermediaries.
+- Each participant plays a specific role in the transmission, processing, and authorization of electronic financial transactions.
+- Understanding the roles of participants is essential for efficient message routing and transaction processing.
+
+---
+
+This slide provides an overview of the participants involved in an ISO message, highlighting their roles and interactions in the context of electronic financial transactions. It emphasizes the importance of each participant in ensuring the successful processing of ISO messages.

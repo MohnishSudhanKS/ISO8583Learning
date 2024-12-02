@@ -1,0 +1,34 @@
+### Slide: Data Elements in ISO 8583 Message
+
+**Title: Data Elements in ISO 8583 Message**
+
+**Content:**
+
+1. **Introduction:**
+   - Data elements are essential components of ISO 8583 messages, containing specific information about a transaction.
+
+2. **Format:**
+   - Data elements are organized in a fixed format and identified by numeric identifiers ranging from 2 to 128.
+
+3. **Common Data Elements:**
+   - **Primary Account Number (PAN):** Unique identifier for the cardholder's account.
+   - **Processing Code:** Indicates the type of transaction (e.g., sale, withdrawal, balance inquiry).
+   - **Amount:** Transaction amount, typically in cents or smallest currency unit.
+   - **Date and Time:** Timestamp indicating when the transaction occurred.
+   - **Terminal Identification (TID):** Identifier for the terminal initiating the transaction.
+   - **Merchant Identification (MID):** Identifier for the merchant accepting the transaction.
+   - **Authorization Code:** Code provided by the issuer authorizing the transaction.
+
+4. **Additional Data Elements:**
+   - Data elements beyond the common ones may include additional transaction details, customer information, and security-related data.
+
+5. **Usage:**
+   - Data elements provide essential information for processing and authorizing transactions.
+   - They enable interoperability between different systems and ensure accurate transaction processing.
+
+**Key Points:**
+- Data elements in ISO 8583 messages contain specific transaction information, identified by numeric identifiers.
+- Common data elements include PAN, Processing Code, Amount, Date and Time, TID, MID, and Authorization Code.
+- Understanding data elements is crucial for accurate transaction processing and interoperability within the payment ecosystem.
+
+---

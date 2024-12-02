@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+
+<sample t="32028" it="0" lt="0" ct="0" ts="1711972591982" s="false" lb="SCR22_T01_MASTER -DEBIT_ATM" rc="" rm="" tn="SCR22_MASTER_DEBIT_ATM 2-1" dt="" de="" by="0" sby="415" sc="1" ec="1" ng="1" na="2" hn="L-INE-3QMWM93">
+  <sample t="32011" it="0" lt="0" ct="0" ts="1711972591999" s="false" lb="SCR22_T01_R01_MASTER_DEBIT_ATM_WITHDRWAL" rc="" rm="Timeout" tn="SCR22_MASTER_DEBIT_ATM 2-1" dt="text" de="" by="0" sby="415" sc="1" ec="1" ng="1" na="2" hn="L-INE-3QMWM93">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String">Host: 192.168.29.102
+Port: 8001</requestHeader>
+    <responseData class="java.lang.String"></responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">&lt;isomsg&gt;&#xd;
+  &lt;!-- org.jpos.iso.packager.GenericPackager[C:\PerfomanceTesting\Learning\ISO8583\LearningScripts\Transactions/Packager/FieldPackager_MC.xml] --&gt;&#xd;
+  &lt;field id=&quot;0&quot; value=&quot;0100&quot;/&gt;&#xd;
+  &lt;field id=&quot;2&quot; value=&quot;4321528492614195&quot;/&gt;&#xd;
+  &lt;field id=&quot;3&quot; value=&quot;011000&quot;/&gt;&#xd;
+  &lt;field id=&quot;4&quot; value=&quot;000000010000&quot;/&gt;&#xd;
+  &lt;field id=&quot;5&quot; value=&quot;000000010000&quot;/&gt;&#xd;
+  &lt;field id=&quot;6&quot; value=&quot;000000010000&quot;/&gt;&#xd;
+  &lt;field id=&quot;7&quot; value=&quot;0401172631&quot;/&gt;&#xd;
+  &lt;field id=&quot;9&quot; value=&quot;61000000&quot;/&gt;&#xd;
+  &lt;field id=&quot;10&quot; value=&quot;61000000&quot;/&gt;&#xd;
+  &lt;field id=&quot;11&quot; value=&quot;038501&quot;/&gt;&#xd;
+  &lt;field id=&quot;12&quot; value=&quot;172631&quot;/&gt;&#xd;
+  &lt;field id=&quot;13&quot; value=&quot;0401&quot;/&gt;&#xd;
+  &lt;field id=&quot;14&quot; value=&quot;1212&quot;/&gt;&#xd;
+  &lt;field id=&quot;15&quot; value=&quot;0401&quot;/&gt;&#xd;
+  &lt;field id=&quot;16&quot; value=&quot;0401&quot;/&gt;&#xd;
+  &lt;field id=&quot;18&quot; value=&quot;6011&quot;/&gt;&#xd;
+  &lt;field id=&quot;22&quot; value=&quot;051&quot;/&gt;&#xd;
+  &lt;field id=&quot;23&quot; value=&quot;000&quot;/&gt;&#xd;
+  &lt;field id=&quot;26&quot; value=&quot;04&quot;/&gt;&#xd;
+  &lt;field id=&quot;32&quot; value=&quot;123456&quot;/&gt;&#xd;
+  &lt;field id=&quot;35&quot; value=&quot;4321528492614195=12124321528492614195&quot;/&gt;&#xd;
+  &lt;field id=&quot;37&quot; value=&quot;000000038501&quot;/&gt;&#xd;
+  &lt;field id=&quot;41&quot; value=&quot;12345678&quot;/&gt;&#xd;
+  &lt;field id=&quot;42&quot; value=&quot;123456789012345&quot;/&gt;&#xd;
+  &lt;field id=&quot;43&quot; value=&quot;Merchant name          Merchant city PHL&quot;/&gt;&#xd;
+  &lt;field id=&quot;48&quot; value=&quot;R&quot;/&gt;&#xd;
+  &lt;field id=&quot;49&quot; value=&quot;608&quot;/&gt;&#xd;
+  &lt;field id=&quot;50&quot; value=&quot;608&quot;/&gt;&#xd;
+  &lt;field id=&quot;51&quot; value=&quot;608&quot;/&gt;&#xd;
+  &lt;isomsg id=&quot;55&quot;&gt;&#xd;
+    &lt;5f2a&gt;&lt;field id=&quot;1&quot; value=&quot;0608&quot;/&gt;&lt;/5f2a&gt;
+    &lt;82&gt;&lt;field id=&quot;2&quot; value=&quot;5C00&quot; type=&quot;binary&quot;/&gt;&lt;/82&gt;
+    &lt;95&gt;&lt;field id=&quot;3&quot; value=&quot;0000040000&quot; type=&quot;binary&quot;/&gt;&lt;/95&gt;
+    &lt;9a&gt;&lt;field id=&quot;4&quot; value=&quot;240110&quot;/&gt;&lt;/9a&gt;
+    &lt;9c&gt;&lt;field id=&quot;5&quot; value=&quot;01&quot;/&gt;&lt;/9c&gt;
+    &lt;9f02&gt;&lt;field id=&quot;6&quot; value=&quot;000000010000&quot;/&gt;&lt;/9f02&gt;
+    &lt;9f10&gt;&lt;field id=&quot;7&quot; value=&quot;0110A00001220000000000000000000000FF&quot; type=&quot;binary&quot;/&gt;&lt;/9f10&gt;
+    &lt;9f1a&gt;&lt;field id=&quot;8&quot; value=&quot;0840&quot;/&gt;&lt;/9f1a&gt;
+    &lt;9f26&gt;&lt;field id=&quot;9&quot; value=&quot;C026D376794D03AB&quot; type=&quot;binary&quot;/&gt;&lt;/9f26&gt;
+    &lt;9f27&gt;&lt;field id=&quot;10&quot; value=&quot;80&quot; type=&quot;binary&quot;/&gt;&lt;/9f27&gt;
+    &lt;9f33&gt;&lt;field id=&quot;11&quot; value=&quot;604020&quot; type=&quot;binary&quot;/&gt;&lt;/9f33&gt;
+    &lt;9f34&gt;&lt;field id=&quot;12&quot; value=&quot;000000&quot; type=&quot;binary&quot;/&gt;&lt;/9f34&gt;
+    &lt;9f36&gt;&lt;field id=&quot;13&quot; value=&quot;0014&quot; type=&quot;binary&quot;/&gt;&lt;/9f36&gt;
+    &lt;9f37&gt;&lt;field id=&quot;14&quot; value=&quot;63552822&quot; type=&quot;binary&quot;/&gt;&lt;/9f37&gt;
+  &lt;/isomsg&gt;&#xd;
+  &lt;field id=&quot;61&quot; value=&quot;1010010000500608ABC0000000&quot;/&gt;&#xd;
+  &lt;field id=&quot;63&quot; value=&quot;MDW0008XI&quot;/&gt;&#xd;
+&lt;/isomsg&gt;&#xd;
+
+&lt;!--
+0000  F0 F1 F0 F0 7E FF 46 41  28 E1 E2 0A F1 F6 F4 F3  ....~.FA(.......&#xd;
+0010  F2 F1 F5 F2 F8 F4 F9 F2  F6 F1 F4 F1 F9 F5 F0 F1  ................&#xd;
+0020  F1 F0 F0 F0 F0 F0 F0 F0  F0 F0 F0 F1 F0 F0 F0 F0  ................&#xd;
+0030  F0 F0 F0 F0 F0 F0 F0 F1  F0 F0 F0 F0 F0 F0 F0 F0  ................&#xd;
+0040  F0 F0 F0 F1 F0 F0 F0 F0  F0 F4 F0 F1 F1 F7 F2 F6  ................&#xd;
+0050  F3 F1 F6 F1 F0 F0 F0 F0  F0 F0 F6 F1 F0 F0 F0 F0  ................&#xd;
+0060  F0 F0 F0 F3 F8 F5 F0 F1  F1 F7 F2 F6 F3 F1 F0 F4  ................&#xd;
+0070  F0 F1 F1 F2 F1 F2 F0 F4  F0 F1 F0 F4 F0 F1 F6 F0  ................&#xd;
+0080  F1 F1 F0 F5 F1 F0 F0 F0  F0 F4 F0 F6 F1 F2 F3 F4  ................&#xd;
+0090  F5 F6 F3 F7 F4 F3 F2 F1  F5 F2 F8 F4 F9 F2 F6 F1  ................&#xd;
+00a0  F4 F1 F9 F5 7E F1 F2 F1  F2 F4 F3 F2 F1 F5 F2 F8  ....~...........&#xd;
+00b0  F4 F9 F2 F6 F1 F4 F1 F9  F5 F0 F0 F0 F0 F0 F0 F0  ................&#xd;
+00c0  F3 F8 F5 F0 F1 F1 F2 F3  F4 F5 F6 F7 F8 F1 F2 F3  ................&#xd;
+00d0  F4 F5 F6 F7 F8 F9 F0 F1  F2 F3 F4 F5 D4 85 99 83  ................&#xd;
+00e0  88 81 95 A3 40 95 81 94  85 40 40 40 40 40 40 40  ....@....@@@@@@@&#xd;
+00f0  40 40 40 D4 85 99 83 88  81 95 A3 40 83 89 A3 A8  @@@........@....&#xd;
+0100  40 D7 C8 D3 F0 F0 F1 D9  F6 F0 F8 F6 F0 F8 F6 F0  @...............&#xd;
+0110  F8 F0 F9 F8 5F 2A 02 06  08 82 02 5C 00 95 05 00  ...._*.....\....&#xd;
+0120  00 04 00 00 9A 03 24 01  10 9C 01 01 9F 02 06 00  ......$.........&#xd;
+0130  00 00 01 00 00 9F 10 12  01 10 A0 00 01 22 00 00  .............&quot;..&#xd;
+0140  00 00 00 00 00 00 00 00  00 FF 9F 1A 02 08 40 9F  ..............@.&#xd;
+0150  26 08 C0 26 D3 76 79 4D  03 AB 9F 27 01 80 9F 33  &amp;..&amp;.vyM...&apos;...3&#xd;
+0160  03 60 40 20 9F 34 03 00  00 00 9F 36 02 00 14 9F  .`@ .4.....6....&#xd;
+0170  37 04 63 55 28 22 F0 F2  F6 F1 F0 F1 F0 F0 F1 F0  7.cU(&quot;..........&#xd;
+0180  F0 F0 F0 F5 F0 F0 F6 F0  F8 C1 C2 C3 F0 F0 F0 F0  ................&#xd;
+0190  F0 F0 F0 F0 F0 F9 D4 C4  E6 F0 F0 F0 F8 E7 C9     ...............&#xd;
+--&gt;</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+</sample>
+<sample t="32028" it="0" lt="0" ct="0" ts="1711972591982" s="false" lb="SCR21_T01_MASTER_DEBIT_POS" rc="" rm="" tn="SCR21_MASTER_DEBIT_POS 1-1" dt="" de="" by="0" sby="0" sc="1" ec="1" ng="1" na="2" hn="L-INE-3QMWM93">
+  <sample t="32011" it="0" lt="0" ct="0" ts="1711972591999" s="false" lb="SCR21_T01_R01_MASTER_DEBIT_POS" rc="" rm="Timeout" tn="SCR21_MASTER_DEBIT_POS 1-1" dt="text" de="" by="0" sby="0" sc="1" ec="1" ng="1" na="2" hn="L-INE-3QMWM93">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String">Host: 192.168.29.102
+Port: 8001</requestHeader>
+    <responseData class="java.lang.String"></responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">&lt;isomsg&gt;&#xd;
+  &lt;!-- org.jpos.iso.packager.GenericPackager[C:\PerfomanceTesting\Learning\ISO8583\LearningScripts\Transactions/Packager/FieldPackager_MC.xml] --&gt;&#xd;
+  &lt;field id=&quot;0&quot; value=&quot;0100&quot;/&gt;&#xd;
+  &lt;field id=&quot;2&quot; value=&quot;4321528492614195&quot;/&gt;&#xd;
+  &lt;field id=&quot;3&quot; value=&quot;001000&quot;/&gt;&#xd;
+  &lt;field id=&quot;4&quot; value=&quot;000000010000&quot;/&gt;&#xd;
+  &lt;field id=&quot;5&quot; value=&quot;000000010000&quot;/&gt;&#xd;
+  &lt;field id=&quot;6&quot; value=&quot;000000010000&quot;/&gt;&#xd;
+  &lt;field id=&quot;7&quot; value=&quot;0401172631&quot;/&gt;&#xd;
+  &lt;field id=&quot;9&quot; value=&quot;61000000&quot;/&gt;&#xd;
+  &lt;field id=&quot;10&quot; value=&quot;61000000&quot;/&gt;&#xd;
+  &lt;field id=&quot;11&quot; value=&quot;033001&quot;/&gt;&#xd;
+  &lt;field id=&quot;12&quot; value=&quot;172631&quot;/&gt;&#xd;
+  &lt;field id=&quot;13&quot; value=&quot;0401&quot;/&gt;&#xd;
+  &lt;field id=&quot;14&quot; value=&quot;1212&quot;/&gt;&#xd;
+  &lt;field id=&quot;15&quot; value=&quot;0401&quot;/&gt;&#xd;
+  &lt;field id=&quot;16&quot; value=&quot;0401&quot;/&gt;&#xd;
+  &lt;field id=&quot;18&quot; value=&quot;5411&quot;/&gt;&#xd;
+  &lt;field id=&quot;22&quot; value=&quot;051&quot;/&gt;&#xd;
+  &lt;field id=&quot;23&quot; value=&quot;000&quot;/&gt;&#xd;
+  &lt;field id=&quot;32&quot; value=&quot;524067&quot;/&gt;&#xd;
+  &lt;field id=&quot;35&quot; value=&quot;4321528492614195=12124321528492614195&quot;/&gt;&#xd;
+  &lt;field id=&quot;37&quot; value=&quot;${SCR22_dp_rrn}&quot;/&gt;&#xd;
+  &lt;field id=&quot;41&quot; value=&quot;12345678&quot;/&gt;&#xd;
+  &lt;field id=&quot;42&quot; value=&quot;123456789012345&quot;/&gt;&#xd;
+  &lt;field id=&quot;43&quot; value=&quot;Merchant name          Merchant city PHL&quot;/&gt;&#xd;
+  &lt;field id=&quot;48&quot; value=&quot;R&quot;/&gt;&#xd;
+  &lt;field id=&quot;49&quot; value=&quot;608&quot;/&gt;&#xd;
+  &lt;field id=&quot;50&quot; value=&quot;608&quot;/&gt;&#xd;
+  &lt;field id=&quot;51&quot; value=&quot;608&quot;/&gt;&#xd;
+  &lt;isomsg id=&quot;55&quot;&gt;&#xd;
+    &lt;5f2a&gt;&lt;field id=&quot;1&quot; value=&quot;0608&quot;/&gt;&lt;/5f2a&gt;
+    &lt;82&gt;&lt;field id=&quot;2&quot; value=&quot;5C00&quot; type=&quot;binary&quot;/&gt;&lt;/82&gt;
+    &lt;95&gt;&lt;field id=&quot;3&quot; value=&quot;0000000000&quot; type=&quot;binary&quot;/&gt;&lt;/95&gt;
+    &lt;9a&gt;&lt;field id=&quot;4&quot; value=&quot;240109&quot;/&gt;&lt;/9a&gt;
+    &lt;9c&gt;&lt;field id=&quot;5&quot; value=&quot;00&quot;/&gt;&lt;/9c&gt;
+    &lt;9f02&gt;&lt;field id=&quot;6&quot; value=&quot;000000010000&quot;/&gt;&lt;/9f02&gt;
+    &lt;9f10&gt;&lt;field id=&quot;7&quot; value=&quot;0110A00001220000000000000000000000FF&quot; type=&quot;binary&quot;/&gt;&lt;/9f10&gt;
+    &lt;9f1a&gt;&lt;field id=&quot;8&quot; value=&quot;0840&quot;/&gt;&lt;/9f1a&gt;
+    &lt;9f26&gt;&lt;field id=&quot;9&quot; value=&quot;2986FF37A448B968&quot; type=&quot;binary&quot;/&gt;&lt;/9f26&gt;
+    &lt;9f27&gt;&lt;field id=&quot;10&quot; value=&quot;80&quot; type=&quot;binary&quot;/&gt;&lt;/9f27&gt;
+    &lt;9f33&gt;&lt;field id=&quot;11&quot; value=&quot;E0E8E8&quot; type=&quot;binary&quot;/&gt;&lt;/9f33&gt;
+    &lt;9f34&gt;&lt;field id=&quot;12&quot; value=&quot;000000&quot; type=&quot;binary&quot;/&gt;&lt;/9f34&gt;
+    &lt;9f36&gt;&lt;field id=&quot;13&quot; value=&quot;0015&quot; type=&quot;binary&quot;/&gt;&lt;/9f36&gt;
+    &lt;9f37&gt;&lt;field id=&quot;14&quot; value=&quot;99947026&quot; type=&quot;binary&quot;/&gt;&lt;/9f37&gt;
+  &lt;/isomsg&gt;&#xd;
+  &lt;field id=&quot;61&quot; value=&quot;1010010000500608ABC0000000&quot;/&gt;&#xd;
+  &lt;field id=&quot;63&quot; value=&quot;MCW0008XI&quot;/&gt;&#xd;
+&lt;/isomsg&gt;&#xd;
+
+&lt;!--
+org.jpos.iso.ISOException: error packing field 37 (org.jpos.iso.ISOException: org.jpos.iso.IFE_NUMERIC: Problem packing field 37 (org.jpos.iso.ISOException: Field length 15 too long. Max: 12))--&gt;</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+</sample>
+
+<sample t="10002" it="30" lt="0" ct="0" ts="1711972652132" s="false" lb="SCR21_T01_MASTER_DEBIT_POS" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="SCR21_MASTER_DEBIT_POS 1-1" dt="" de="" by="0" sby="0" sc="1" ec="1" ng="1" na="1" hn="L-INE-3QMWM93">
+  <sample t="10002" it="0" lt="0" ct="0" ts="1711972652162" s="false" lb="SCR21_T01_R01_MASTER_DEBIT_POS" rc="" rm="Timeout" tn="SCR21_MASTER_DEBIT_POS 1-1" dt="text" de="" by="0" sby="0" sc="1" ec="1" ng="1" na="1" hn="L-INE-3QMWM93">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String">Host: 192.168.29.102
+Port: 8001</requestHeader>
+    <responseData class="java.lang.String"></responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">&lt;isomsg&gt;&#xd;
+  &lt;!-- org.jpos.iso.packager.GenericPackager[C:\PerfomanceTesting\Learning\ISO8583\LearningScripts\Transactions/Packager/FieldPackager_MC.xml] --&gt;&#xd;
+  &lt;field id=&quot;0&quot; value=&quot;0100&quot;/&gt;&#xd;
+  &lt;field id=&quot;2&quot; value=&quot;4321528492614195&quot;/&gt;&#xd;
+  &lt;field id=&quot;3&quot; value=&quot;001000&quot;/&gt;&#xd;
+  &lt;field id=&quot;4&quot; value=&quot;000000010000&quot;/&gt;&#xd;
+  &lt;field id=&quot;5&quot; value=&quot;000000010000&quot;/&gt;&#xd;
+  &lt;field id=&quot;6&quot; value=&quot;000000010000&quot;/&gt;&#xd;
+  &lt;field id=&quot;7&quot; value=&quot;0401172732&quot;/&gt;&#xd;
+  &lt;field id=&quot;9&quot; value=&quot;61000000&quot;/&gt;&#xd;
+  &lt;field id=&quot;10&quot; value=&quot;61000000&quot;/&gt;&#xd;
+  &lt;field id=&quot;11&quot; value=&quot;033001&quot;/&gt;&#xd;
+  &lt;field id=&quot;12&quot; value=&quot;172732&quot;/&gt;&#xd;
+  &lt;field id=&quot;13&quot; value=&quot;0401&quot;/&gt;&#xd;
+  &lt;field id=&quot;14&quot; value=&quot;1212&quot;/&gt;&#xd;
+  &lt;field id=&quot;15&quot; value=&quot;0401&quot;/&gt;&#xd;
+  &lt;field id=&quot;16&quot; value=&quot;0401&quot;/&gt;&#xd;
+  &lt;field id=&quot;18&quot; value=&quot;5411&quot;/&gt;&#xd;
+  &lt;field id=&quot;22&quot; value=&quot;051&quot;/&gt;&#xd;
+  &lt;field id=&quot;23&quot; value=&quot;000&quot;/&gt;&#xd;
+  &lt;field id=&quot;32&quot; value=&quot;524067&quot;/&gt;&#xd;
+  &lt;field id=&quot;35&quot; value=&quot;4321528492614195=12124321528492614195&quot;/&gt;&#xd;
+  &lt;field id=&quot;37&quot; value=&quot;${SCR22_dp_rrn}&quot;/&gt;&#xd;
+  &lt;field id=&quot;41&quot; value=&quot;12345678&quot;/&gt;&#xd;
+  &lt;field id=&quot;42&quot; value=&quot;123456789012345&quot;/&gt;&#xd;
+  &lt;field id=&quot;43&quot; value=&quot;Merchant name          Merchant city PHL&quot;/&gt;&#xd;
+  &lt;field id=&quot;48&quot; value=&quot;R&quot;/&gt;&#xd;
+  &lt;field id=&quot;49&quot; value=&quot;608&quot;/&gt;&#xd;
+  &lt;field id=&quot;50&quot; value=&quot;608&quot;/&gt;&#xd;
+  &lt;field id=&quot;51&quot; value=&quot;608&quot;/&gt;&#xd;
+  &lt;isomsg id=&quot;55&quot;&gt;&#xd;
+    &lt;5f2a&gt;&lt;field id=&quot;1&quot; value=&quot;0608&quot;/&gt;&lt;/5f2a&gt;
+    &lt;82&gt;&lt;field id=&quot;2&quot; value=&quot;5C00&quot; type=&quot;binary&quot;/&gt;&lt;/82&gt;
+    &lt;95&gt;&lt;field id=&quot;3&quot; value=&quot;0000000000&quot; type=&quot;binary&quot;/&gt;&lt;/95&gt;
+    &lt;9a&gt;&lt;field id=&quot;4&quot; value=&quot;240109&quot;/&gt;&lt;/9a&gt;
+    &lt;9c&gt;&lt;field id=&quot;5&quot; value=&quot;00&quot;/&gt;&lt;/9c&gt;
+    &lt;9f02&gt;&lt;field id=&quot;6&quot; value=&quot;000000010000&quot;/&gt;&lt;/9f02&gt;
+    &lt;9f10&gt;&lt;field id=&quot;7&quot; value=&quot;0110A00001220000000000000000000000FF&quot; type=&quot;binary&quot;/&gt;&lt;/9f10&gt;
+    &lt;9f1a&gt;&lt;field id=&quot;8&quot; value=&quot;0840&quot;/&gt;&lt;/9f1a&gt;
+    &lt;9f26&gt;&lt;field id=&quot;9&quot; value=&quot;2986FF37A448B968&quot; type=&quot;binary&quot;/&gt;&lt;/9f26&gt;
+    &lt;9f27&gt;&lt;field id=&quot;10&quot; value=&quot;80&quot; type=&quot;binary&quot;/&gt;&lt;/9f27&gt;
+    &lt;9f33&gt;&lt;field id=&quot;11&quot; value=&quot;E0E8E8&quot; type=&quot;binary&quot;/&gt;&lt;/9f33&gt;
+    &lt;9f34&gt;&lt;field id=&quot;12&quot; value=&quot;000000&quot; type=&quot;binary&quot;/&gt;&lt;/9f34&gt;
+    &lt;9f36&gt;&lt;field id=&quot;13&quot; value=&quot;0015&quot; type=&quot;binary&quot;/&gt;&lt;/9f36&gt;
+    &lt;9f37&gt;&lt;field id=&quot;14&quot; value=&quot;99947026&quot; type=&quot;binary&quot;/&gt;&lt;/9f37&gt;
+  &lt;/isomsg&gt;&#xd;
+  &lt;field id=&quot;61&quot; value=&quot;1010010000500608ABC0000000&quot;/&gt;&#xd;
+  &lt;field id=&quot;63&quot; value=&quot;MCW0008XI&quot;/&gt;&#xd;
+&lt;/isomsg&gt;&#xd;
+
+&lt;!--
+org.jpos.iso.ISOException: error packing field 37 (org.jpos.iso.ISOException: org.jpos.iso.IFE_NUMERIC: Problem packing field 37 (org.jpos.iso.ISOException: Field length 15 too long. Max: 12))--&gt;</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+</sample>
+
+<sample t="10004" it="14" lt="0" ct="0" ts="1711972695695" s="false" lb="SCR21_T01_MASTER_DEBIT_POS" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="SCR21_MASTER_DEBIT_POS 1-1" dt="" de="" by="0" sby="0" sc="1" ec="1" ng="1" na="1" hn="L-INE-3QMWM93">
+  <sample t="10004" it="0" lt="0" ct="0" ts="1711972695708" s="false" lb="SCR21_T01_R01_MASTER_DEBIT_POS" rc="" rm="Timeout" tn="SCR21_MASTER_DEBIT_POS 1-1" dt="text" de="" by="0" sby="0" sc="1" ec="1" ng="1" na="1" hn="L-INE-3QMWM93">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String">Host: 192.168.29.102
+Port: 8001</requestHeader>
+    <responseData class="java.lang.String"></responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">&lt;isomsg&gt;&#xd;
+  &lt;!-- org.jpos.iso.packager.GenericPackager[C:\PerfomanceTesting\Learning\ISO8583\LearningScripts\Transactions/Packager/FieldPackager_MC.xml] --&gt;&#xd;
+  &lt;field id=&quot;0&quot; value=&quot;0100&quot;/&gt;&#xd;
+  &lt;field id=&quot;2&quot; value=&quot;4321528492614195&quot;/&gt;&#xd;
+  &lt;field id=&quot;3&quot; value=&quot;001000&quot;/&gt;&#xd;
+  &lt;field id=&quot;4&quot; value=&quot;000000010000&quot;/&gt;&#xd;
+  &lt;field id=&quot;5&quot; value=&quot;000000010000&quot;/&gt;&#xd;
+  &lt;field id=&quot;6&quot; value=&quot;000000010000&quot;/&gt;&#xd;
+  &lt;field id=&quot;7&quot; value=&quot;0401172815&quot;/&gt;&#xd;
+  &lt;field id=&quot;9&quot; value=&quot;61000000&quot;/&gt;&#xd;
+  &lt;field id=&quot;10&quot; value=&quot;61000000&quot;/&gt;&#xd;
+  &lt;field id=&quot;11&quot; value=&quot;033001&quot;/&gt;&#xd;
+  &lt;field id=&quot;12&quot; value=&quot;172815&quot;/&gt;&#xd;
+  &lt;field id=&quot;13&quot; value=&quot;0401&quot;/&gt;&#xd;
+  &lt;field id=&quot;14&quot; value=&quot;1212&quot;/&gt;&#xd;
+  &lt;field id=&quot;15&quot; value=&quot;0401&quot;/&gt;&#xd;
+  &lt;field id=&quot;16&quot; value=&quot;0401&quot;/&gt;&#xd;
+  &lt;field id=&quot;18&quot; value=&quot;5411&quot;/&gt;&#xd;
+  &lt;field id=&quot;22&quot; value=&quot;051&quot;/&gt;&#xd;
+  &lt;field id=&quot;23&quot; value=&quot;000&quot;/&gt;&#xd;
+  &lt;field id=&quot;32&quot; value=&quot;524067&quot;/&gt;&#xd;
+  &lt;field id=&quot;35&quot; value=&quot;4321528492614195=12124321528492614195&quot;/&gt;&#xd;
+  &lt;field id=&quot;37&quot; value=&quot;${SCR22_dp_rrn}&quot;/&gt;&#xd;
+  &lt;field id=&quot;41&quot; value=&quot;12345678&quot;/&gt;&#xd;
+  &lt;field id=&quot;42&quot; value=&quot;123456789012345&quot;/&gt;&#xd;
+  &lt;field id=&quot;43&quot; value=&quot;Merchant name          Merchant city PHL&quot;/&gt;&#xd;
+  &lt;field id=&quot;48&quot; value=&quot;R&quot;/&gt;&#xd;
+  &lt;field id=&quot;49&quot; value=&quot;608&quot;/&gt;&#xd;
+  &lt;field id=&quot;50&quot; value=&quot;608&quot;/&gt;&#xd;
+  &lt;field id=&quot;51&quot; value=&quot;608&quot;/&gt;&#xd;
+  &lt;isomsg id=&quot;55&quot;&gt;&#xd;
+    &lt;5f2a&gt;&lt;field id=&quot;1&quot; value=&quot;0608&quot;/&gt;&lt;/5f2a&gt;
+    &lt;82&gt;&lt;field id=&quot;2&quot; value=&quot;5C00&quot; type=&quot;binary&quot;/&gt;&lt;/82&gt;
+    &lt;95&gt;&lt;field id=&quot;3&quot; value=&quot;0000000000&quot; type=&quot;binary&quot;/&gt;&lt;/95&gt;
+    &lt;9a&gt;&lt;field id=&quot;4&quot; value=&quot;240109&quot;/&gt;&lt;/9a&gt;
+    &lt;9c&gt;&lt;field id=&quot;5&quot; value=&quot;00&quot;/&gt;&lt;/9c&gt;
+    &lt;9f02&gt;&lt;field id=&quot;6&quot; value=&quot;000000010000&quot;/&gt;&lt;/9f02&gt;
+    &lt;9f10&gt;&lt;field id=&quot;7&quot; value=&quot;0110A00001220000000000000000000000FF&quot; type=&quot;binary&quot;/&gt;&lt;/9f10&gt;
+    &lt;9f1a&gt;&lt;field id=&quot;8&quot; value=&quot;0840&quot;/&gt;&lt;/9f1a&gt;
+    &lt;9f26&gt;&lt;field id=&quot;9&quot; value=&quot;2986FF37A448B968&quot; type=&quot;binary&quot;/&gt;&lt;/9f26&gt;
+    &lt;9f27&gt;&lt;field id=&quot;10&quot; value=&quot;80&quot; type=&quot;binary&quot;/&gt;&lt;/9f27&gt;
+    &lt;9f33&gt;&lt;field id=&quot;11&quot; value=&quot;E0E8E8&quot; type=&quot;binary&quot;/&gt;&lt;/9f33&gt;
+    &lt;9f34&gt;&lt;field id=&quot;12&quot; value=&quot;000000&quot; type=&quot;binary&quot;/&gt;&lt;/9f34&gt;
+    &lt;9f36&gt;&lt;field id=&quot;13&quot; value=&quot;0015&quot; type=&quot;binary&quot;/&gt;&lt;/9f36&gt;
+    &lt;9f37&gt;&lt;field id=&quot;14&quot; value=&quot;99947026&quot; type=&quot;binary&quot;/&gt;&lt;/9f37&gt;
+  &lt;/isomsg&gt;&#xd;
+  &lt;field id=&quot;61&quot; value=&quot;1010010000500608ABC0000000&quot;/&gt;&#xd;
+  &lt;field id=&quot;63&quot; value=&quot;MCW0008XI&quot;/&gt;&#xd;
+&lt;/isomsg&gt;&#xd;
+
+&lt;!--
+org.jpos.iso.ISOException: error packing field 37 (org.jpos.iso.ISOException: org.jpos.iso.IFE_NUMERIC: Problem packing field 37 (org.jpos.iso.ISOException: Field length 15 too long. Max: 12))--&gt;</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+</sample>
+
+
+</testResults>

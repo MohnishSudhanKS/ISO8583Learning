@@ -1,0 +1,34 @@
+An ISO 8583 message consists of several parts, each serving a specific purpose in facilitating electronic financial transactions. Here are the main components or parts of an ISO 8583 message:
+
+### 1. Message Type Indicator (MTI):
+- The Message Type Indicator (MTI) is a four-digit numeric code that identifies the overall purpose and format of the message.
+- The MTI provides information such as the type of transaction (e.g., authorization request, financial request, reversal), message class (e.g., authorization, financial), and message function (e.g., request, response).
+
+### 2. Bitmaps:
+- Bitmaps are used to indicate the presence or absence of data elements within the message.
+- Primary Bitmap: Represents the first 64 data elements.
+- Secondary Bitmap: Used when more than 64 data elements are present in the message.
+- Each bit in the bitmap corresponds to a specific data element, with a set bit indicating the presence of the corresponding data element.
+
+### 3. Data Elements:
+- Data elements carry specific information related to the transaction, such as account numbers, transaction amounts, dates, and additional data.
+- Data elements are organized in a fixed format and identified by numeric identifiers ranging from 2 to 128.
+- Examples of common data elements include the Primary Account Number (PAN), Processing Code, Amount, and Terminal Identification.
+
+### 4. Header:
+- The Header contains additional information about the message, such as network identifiers, source and destination information, and routing details.
+- The Header may vary depending on the specific implementation and requirements of the ISO 8583 messaging system.
+
+### 5. Trailer:
+- The Trailer marks the end of the message and may contain additional control information or checksums for message integrity verification.
+- The Trailer ensures that the message is complete and has not been altered during transmission.
+
+### 6. Subfields:
+- Some data elements within the message may consist of subfields, which further break down the information into smaller units.
+- Subfields are typically delimited by specific characters or lengths to differentiate individual components within a data element.
+
+### 7. Delimiters:
+- Delimiters are special characters used to separate or delineate different parts of the message, such as data elements, subfields, or fields.
+- Delimiters help parsers and processors identify and extract specific components of the message accurately.
+
+Understanding the various parts of an ISO 8583 message is essential for developing, processing, and interpreting electronic financial transactions accurately and efficiently. Each component plays a critical role in ensuring the integrity, security, and interoperability of the messaging system within the financial industry.

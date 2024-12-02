@@ -1,0 +1,84 @@
+   Cardholder
+      |
+      V
+   ATM Terminal
+      |
+      V
+   Card Reader <-----------------+
+      |                           |
+      V                           |
+   Keypad                         |
+      |                           |
+      V                           |
+   Display Screen                 |
+      |                           |
+      V                           |
+   Network Interface --------------+
+      |
+      V
+   Switch/Transaction Switch
+      |
+      V
+   Issuer Bank <-----------------+
+      |                           |
+      V                           |
+   Acquirer Bank                   |
+      |                           |
+      V                           |
+   Payment Networks                |
+      |                           |
+      V                           |
+   Authorization Request          |
+      |                           |
+      V                           |
+   Authorization Response         |
+      |                           |
+      V                           |
+   Transaction Processing         |
+      |                           |
+      V                           |
+   Clearing and Settlement        |
+      |                           |
+      V                           |
+   Transaction Receipt            |
+      |
+      V
+   Cardholder
+
+Certainly! Let's walk through an example of an ATM transaction involving a cardholder named John:
+
+1. **John (Cardholder):** John approaches an ATM to withdraw cash.
+
+2. **ATM Terminal:** John inserts his ATM card into the card reader slot.
+
+3. **Card Reader:** The card reader reads the magnetic stripe or chip on John's ATM card, retrieving his account information.
+
+4. **Keypad:** The ATM prompts John to enter his Personal Identification Number (PIN) on the keypad to authenticate the transaction.
+
+5. **Display Screen:** The ATM displays a menu prompting John to select his transaction type. John chooses the "Withdrawal" option.
+
+6. **Network Interface:** The ATM is connected to a network, such as a banking network, via a network interface.
+
+7. **Switch/Transaction Switch:** The ATM's switch sends a transaction request to the switch, indicating that John wants to withdraw $100 from his account.
+
+8. **Issuer Bank (John's Bank):** The switch forwards the transaction request to John's bank, the issuer bank.
+
+9. **Acquirer Bank (ATM Operator's Bank):** The transaction request is received by the acquirer bank, which processes transactions for the ATM operator.
+
+10. **Payment Networks:** The transaction request may pass through payment networks such as Visa or Mastercard, depending on the card network associated with John's ATM card.
+
+11. **Authorization Request:** John's bank receives the transaction request and checks John's account status, funds availability, and transaction limits.
+
+12. **Authorization Response:** John's bank sends an authorization response back to the switch, indicating whether the transaction is approved or declined.
+
+13. **Transaction Processing:** If the transaction is approved, the switch forwards the authorization response to the ATM terminal.
+
+14. **Cash Dispensing:** The ATM dispenses $100 in cash to John.
+
+15. **Clearing and Settlement:** After the transaction is completed, the details are sent for clearing and settlement between the issuer and acquirer banks.
+
+16. **Transaction Receipt:** The ATM prints a transaction receipt for John, showing the details of the transaction, including the amount withdrawn, account balances, and any applicable fees.
+
+17. **John (Cardholder):** John takes his cash and transaction receipt and leaves the ATM.
+
+In this example, we've illustrated the flow of an ATM transaction from the perspective of a cardholder named John, including the interaction between various components such as the ATM terminal, card reader, network interface, switch, issuer bank, acquirer bank, payment networks, and transaction processing stages.

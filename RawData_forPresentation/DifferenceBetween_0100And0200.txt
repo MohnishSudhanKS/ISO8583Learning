@@ -1,0 +1,25 @@
+1. Off-Us Transaction with Dual Message System (DMS):
+
+- Initiation: You insert your card into an off-us ATM and request to withdraw $100.
+- Authorization (First Message):
+  - The off-us ATM sends a request to your bank (the issuing bank of your card) to check if the funds are available and to approve the transaction.
+  - Your bank receives the request and verifies your account details and balance.
+  - Your bank sends an authorization message back to the off-us ATM, approving the $100 withdrawal.
+- Dispensing Cash:
+  - The off-us ATM dispenses $100 in cash to you.
+- Reconciliation (Second Message):
+  - The details of the off-us transaction, including the withdrawal amount and any associated fees, are recorded by the off-us ATM.
+  - Later, the off-us ATM sends a reconciliation message to your bank, informing them of the completed transaction.
+  - Your bank reconciles the transaction details received from the off-us ATM with its own records, deducting the withdrawal amount and any applicable fees from your account.
+
+2. Off-Us Transaction with Single Message System (SMS):
+
+- Initiation: Same as before, you insert your card into an off-us ATM and request to withdraw $100.
+- Authorization and Posting (Single Message):
+  - The off-us ATM sends a request to your bank to authorize the transaction and deduct $100 from your account immediately.
+  - Your bank approves the transaction and sends a single message back to the off-us ATM, authorizing and posting the $100 withdrawal simultaneously.
+- Dispensing Cash: The off-us ATM dispenses $100 in cash to you.
+- No Reconciliation Message Needed: Since the transaction is posted immediately, there is no need for a separate reconciliation message.
+
+
+In summary, in the DMS, the off-us ATM transaction involves two separate messages for authorization and reconciliation, while in the SMS, these steps are combined into a single message for immediate authorization and posting without the need for later reconciliation.

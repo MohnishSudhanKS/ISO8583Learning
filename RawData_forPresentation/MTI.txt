@@ -1,0 +1,24 @@
+Here's a breakdown of each digit in the MTI:
+
+Message Class (A):
+
+Indicates the general category or class of the message.
+
+Message Function (B):
+
+Specifies the specific function or purpose of the message within its class.
+
+Message Origin (C):
+
+Indicates the source or origin of the message.
+
+location of the message source (D):
+Position four of the MTI defines the location of the message source within the payment chain.
+
+Example:
+
+0100	Authorization Request						Request from a point-of-sale terminal for authorization for a cardholder purchase
+0110	Authorization Response						Request response to a point-of-sale terminal for authorization for a cardholder purchase
+0120	Authorization Advice						When the point-of-sale device breaks down and you have to sign a voucher
+0121	Authorization Advice 						Repeat	If the advice times out
+0130	Issuer Response to Authorization Advice		Confirmation of receipt of autho

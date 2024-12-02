@@ -1,0 +1,64 @@
+Detailed flow diagrams for both on-us and off-us transactions involving a Visa or Mastercard card, including the involvement of switches, payment gateways, Visa/Mastercard networks, and both the issuing and acquiring banks.
+
+### On-Us Transaction Flow Diagram:
+
+```
+   Customer (Bank A)         ATM Machine                Bank A
+      |                           |                         |
+      |   Transaction Data        |                         |
+      | -------------->            |                         |
+      |                           |                         |
+      |                           |     Transaction Data    |
+      |                           | ----------------------> |
+      |                           |                         |
+      |                           |     Authorization Req   |
+      |                           | ----------------------> |
+      |                           |                         |
+      |                           |                         |
+      |   Authorization Resp      |                         |
+      | <--------------------------                         |
+      |                           |                         |
+```
+
+### Off-Us Transaction Flow Diagram:
+
+```
+   Customer (Bank A)        ATM Machine           Switch             Visa/Mastercard Network         Issuer Bank (Bank A)         Acquirer Bank (Bank B)
+      |                          |                    |                        |                                |                           |
+      |  Transaction Data        |                    |                        |                                |                           |
+      | -------------->           |                    |                        |                                |                           |
+      |                          |                    |                        |                                |                           |
+      |                          |                    |                        |                                |                           |
+      |                          |                    |                        |                                |                           |
+      |                          |                    |                        |                                |                           |
+      |                          |                    |                        |     Authorization Request      |                           |
+      |                          |                    |                        | ---------------------------> |                           |
+      |                          |                    |                        |                                |                           |
+      |                          |                    |                        |                                |                           |
+      |                          |                    |                        |                                |                           |
+      |                          |                    |                        |   Authorization Response      |                           |
+      | <--------------------------                    |                        | <---------------------------- |                           |
+      |                          |                    |                        |                                |                           |
+      |                          |                    |                        |                                |                           |
+      |                          |                    |                        |                                |                           |
+```
+
+### Explanation:
+
+#### On-Us Transaction Flow:
+1. The customer initiates a transaction at an ATM owned by Bank A.
+2. The transaction data is sent directly to Bank A.
+3. Bank A processes the transaction internally.
+4. Bank A sends an authorization response directly back to the ATM machine.
+5. If the transaction is approved, the ATM machine dispenses cash to the customer.
+
+#### Off-Us Transaction Flow:
+1. The customer initiates a transaction at an ATM owned by Bank B.
+2. The transaction data is sent from the ATM machine to a switch.
+3. The switch routes the transaction data to the Visa/Mastercard network.
+4. The Visa/Mastercard network forwards the transaction data to the issuing bank (Bank A).
+5. Bank A authenticates the transaction and sends an authorization response back.
+6. The authorization response is transmitted back through the network to the ATM machine.
+7. If the transaction is approved, the ATM machine dispenses cash to the customer.
+
+These diagrams detail the flow of transaction data and authorization responses in both on-us and off-us transactions involving a Visa or Mastercard card, including the involvement of switches, payment gateways, Visa/Mastercard networks, and both the issuing and acquiring banks.

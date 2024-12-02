@@ -1,0 +1,2104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.2">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="dp_filepath" elementType="Argument">
+            <stringProp name="Argument.name">dp_filepath</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(import org.apache.jmeter.services.FileServer; FileServer.getFileServer().getBaseDir();)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="dp_waittime" elementType="Argument">
+            <stringProp name="Argument.name">dp_waittime</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="dp_timeout" elementType="Argument">
+            <stringProp name="Argument.name">dp_timeout</stringProp>
+            <stringProp name="Argument.value">10</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="dp_duration" elementType="Argument">
+            <stringProp name="Argument.name">dp_duration</stringProp>
+            <stringProp name="Argument.value">3600</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="dp_rampup" elementType="Argument">
+            <stringProp name="Argument.name">dp_rampup</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SCR23_dp_stanstart" elementType="Argument">
+            <stringProp name="Argument.name">SCR23_dp_stanstart</stringProp>
+            <stringProp name="Argument.value">000001</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SCR24_dp_stanstart" elementType="Argument">
+            <stringProp name="Argument.name">SCR24_dp_stanstart</stringProp>
+            <stringProp name="Argument.value">005501</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SCR25_dp_stanstart" elementType="Argument">
+            <stringProp name="Argument.name">SCR25_dp_stanstart</stringProp>
+            <stringProp name="Argument.value">011001</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SCR26_dp_stanstart" elementType="Argument">
+            <stringProp name="Argument.name">SCR26_dp_stanstart</stringProp>
+            <stringProp name="Argument.value">016501</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SCR27_dp_stanstart" elementType="Argument">
+            <stringProp name="Argument.name">SCR27_dp_stanstart</stringProp>
+            <stringProp name="Argument.value">022001</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SCR28_dp_stanstart" elementType="Argument">
+            <stringProp name="Argument.name">SCR28_dp_stanstart</stringProp>
+            <stringProp name="Argument.value">027501</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SCR23_dp_rrnstart" elementType="Argument">
+            <stringProp name="Argument.name">SCR23_dp_rrnstart</stringProp>
+            <stringProp name="Argument.value">000000000001</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SCR24_dp_rrnstart" elementType="Argument">
+            <stringProp name="Argument.name">SCR24_dp_rrnstart</stringProp>
+            <stringProp name="Argument.value">000000005501</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SCR25_dp_rrnstart" elementType="Argument">
+            <stringProp name="Argument.name">SCR25_dp_rrnstart</stringProp>
+            <stringProp name="Argument.value">000000011001</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SCR26_dp_rrnstart" elementType="Argument">
+            <stringProp name="Argument.name">SCR26_dp_rrnstart</stringProp>
+            <stringProp name="Argument.value">000000016501</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SCR27_dp_rrnstart" elementType="Argument">
+            <stringProp name="Argument.name">SCR27_dp_rrnstart</stringProp>
+            <stringProp name="Argument.value">000000022001</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SCR28_dp_rrnstart" elementType="Argument">
+            <stringProp name="Argument.name">SCR28_dp_rrnstart</stringProp>
+            <stringProp name="Argument.value">000000027501</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SCR23_users" elementType="Argument">
+            <stringProp name="Argument.name">SCR23_users</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SCR24_users" elementType="Argument">
+            <stringProp name="Argument.name">SCR24_users</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SCR25_users" elementType="Argument">
+            <stringProp name="Argument.name">SCR25_users</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SCR26_users" elementType="Argument">
+            <stringProp name="Argument.name">SCR26_users</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SCR27_users" elementType="Argument">
+            <stringProp name="Argument.name">SCR27_users</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SCR28_users" elementType="Argument">
+            <stringProp name="Argument.name">SCR28_users</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SCR23_iterations" elementType="Argument">
+            <stringProp name="Argument.name">SCR23_iterations</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SCR24_iterations" elementType="Argument">
+            <stringProp name="Argument.name">SCR24_iterations</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SCR25_iterations" elementType="Argument">
+            <stringProp name="Argument.name">SCR25_iterations</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SCR26_iterations" elementType="Argument">
+            <stringProp name="Argument.name">SCR26_iterations</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SCR27_iterations" elementType="Argument">
+            <stringProp name="Argument.name">SCR27_iterations</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SCR28_iterations" elementType="Argument">
+            <stringProp name="Argument.name">SCR28_iterations</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SCR23_tps" elementType="Argument">
+            <stringProp name="Argument.name">SCR23_tps</stringProp>
+            <stringProp name="Argument.value">0.5</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SCR24_tps" elementType="Argument">
+            <stringProp name="Argument.name">SCR24_tps</stringProp>
+            <stringProp name="Argument.value">0.5</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SCR25_tps" elementType="Argument">
+            <stringProp name="Argument.name">SCR25_tps</stringProp>
+            <stringProp name="Argument.value">0.5</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SCR26_tps" elementType="Argument">
+            <stringProp name="Argument.name">SCR26_tps</stringProp>
+            <stringProp name="Argument.value">0.5</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SCR27_tps" elementType="Argument">
+            <stringProp name="Argument.name">SCR27_tps</stringProp>
+            <stringProp name="Argument.value">0.5</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SCR28_tps" elementType="Argument">
+            <stringProp name="Argument.name">SCR28_tps</stringProp>
+            <stringProp name="Argument.value">0.5</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </elementProp>
+    </TestPlan>
+    <hashTree>
+      <nz.co.breakpoint.jmeter.iso8583.ISO8583Config guiclass="TestBeanGUI" testclass="nz.co.breakpoint.jmeter.iso8583.ISO8583Config" testname="ISO8583 Connection Configuration-VISA" enabled="true">
+        <stringProp name="classname">VAPChannel</stringProp>
+        <stringProp name="configKey"></stringProp>
+        <stringProp name="connectionSelection">connectionSelection.LAST</stringProp>
+        <stringProp name="header"></stringProp>
+        <stringProp name="host">192.168.29.102</stringProp>
+        <stringProp name="keyPassword"></stringProp>
+        <stringProp name="maxConnections"></stringProp>
+        <stringProp name="mtiMapping"></stringProp>
+        <stringProp name="packager">${dp_filepath}/Packager/FieldPackager_VC.xml</stringProp>
+        <stringProp name="port">8002</stringProp>
+        <stringProp name="requestListener">${dp_filepath}/Listener/beanshell_VC.bsh</stringProp>
+        <boolProp name="reuseConnection">true</boolProp>
+        <stringProp name="storePassword"></stringProp>
+        <collectionProp name="channelConfig"/>
+        <stringProp name="keystore"></stringProp>
+        <collectionProp name="muxKeyConfig"/>
+        <stringProp name="TestPlan.comments">10.192.196.91</stringProp>
+      </nz.co.breakpoint.jmeter.iso8583.ISO8583Config>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Sign_On" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <intProp name="LoopController.loops">-1</intProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">${SCR23_tps}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${dp_rampup}</stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">${dp_duration}</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
+        <boolProp name="ThreadGroup.delayedStart">false</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Sign_On" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <nz.co.breakpoint.jmeter.iso8583.ISO8583Sampler guiclass="TestBeanGUI" testclass="nz.co.breakpoint.jmeter.iso8583.ISO8583Sampler" testname="Sign_On" enabled="true">
+            <stringProp name="configKey"></stringProp>
+            <stringProp name="header"></stringProp>
+            <stringProp name="trailer"></stringProp>
+            <collectionProp name="fields">
+              <elementProp name="00" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="00">
+                <stringProp name="content">0800</stringProp>
+              </elementProp>
+              <elementProp name="07" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="07">
+                <stringProp name="content">${__time(MMddHHmmss,)}</stringProp>
+              </elementProp>
+              <elementProp name="11" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="11">
+                <stringProp name="content">123456</stringProp>
+              </elementProp>
+              <elementProp name="37" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="37">
+                <stringProp name="content">12345678909</stringProp>
+              </elementProp>
+              <elementProp name="70" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="70">
+                <stringProp name="content">071</stringProp>
+              </elementProp>
+            </collectionProp>
+            <stringProp name="timeout">${__groovy(${dp_timeout}*1000,)}</stringProp>
+            <stringProp name="responseCodeField">39</stringProp>
+            <stringProp name="successResponseCode">00</stringProp>
+          </nz.co.breakpoint.jmeter.iso8583.ISO8583Sampler>
+          <hashTree/>
+        </hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="FileWrite" enabled="false">
+          <stringProp name="cacheKey">false</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters">${__time(yyyyMMddHHmmssSSS,dc_timestamp)}</stringProp>
+          <stringProp name="script">import org.apache.jmeter.services.FileServer;
+def FilePath = vars.get(&quot;dp_filepath&quot;);
+def cardNo =vars.get(&quot;dp_cardno&quot;);
+def stan = vars.get(&quot;SCR23_dp_stan&quot;);
+def rrn = vars.get(&quot;SCR23_dp_rrn&quot;);
+long responseTime = prev.getTime();
+def timeStamp = vars.get(&quot;dc_timestamp&quot;);
+
+f = new FileOutputStream(FilePath +&quot;/Filewrite/SCR23_RequestIdentifiers&quot;+&quot;.txt&quot;,true);
+p = new PrintStream(f);
+p.println(timeStamp + &quot;,&quot; + cardNo+ &quot;,&quot; + stan +  &quot;,&quot; + rrn + &quot;,&quot;+ responseTime );
+f.close();</stringProp>
+          <stringProp name="scriptLanguage">groovy</stringProp>
+        </JSR223Sampler>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SCR23_VISA_CREDIT_ECOM" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <intProp name="LoopController.loops">-1</intProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">${SCR23_tps}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${dp_rampup}</stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">${dp_duration}</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
+        <boolProp name="ThreadGroup.delayedStart">false</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+          <stringProp name="delimiter">,</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="filename">${dp_filepath}/DataFile/SCR23_VISA_CREDIT_ECOM_DataFile.txt</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="variableNames">dp_cardno,dp_expirey,dp_amount,dp_cvvdata</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="SCR23_dp_stan" enabled="true">
+          <stringProp name="CounterConfig.start">${SCR23_dp_stanstart}</stringProp>
+          <stringProp name="CounterConfig.end">999999</stringProp>
+          <stringProp name="CounterConfig.incr">1</stringProp>
+          <stringProp name="CounterConfig.name">SCR23_dp_stan</stringProp>
+          <stringProp name="CounterConfig.format">000000</stringProp>
+          <boolProp name="CounterConfig.per_user">false</boolProp>
+        </CounterConfig>
+        <hashTree/>
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="SCR23_dp_rrn" enabled="true">
+          <stringProp name="CounterConfig.start">${SCR23_dp_rrnstart}</stringProp>
+          <stringProp name="CounterConfig.end">999999999999</stringProp>
+          <stringProp name="CounterConfig.incr">1</stringProp>
+          <stringProp name="CounterConfig.name">SCR23_dp_rrn</stringProp>
+          <stringProp name="CounterConfig.format">000000000000</stringProp>
+          <boolProp name="CounterConfig.per_user">false</boolProp>
+        </CounterConfig>
+        <hashTree/>
+        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once Only Controller" enabled="true"/>
+        <hashTree>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">${__groovy(${dp_waittime}*1000,)}</stringProp>
+          </TestAction>
+          <hashTree/>
+        </hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SCR23_T01_VISA_CREDIT_ECOM" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <nz.co.breakpoint.jmeter.iso8583.ISO8583Sampler guiclass="TestBeanGUI" testclass="nz.co.breakpoint.jmeter.iso8583.ISO8583Sampler" testname="SCR23_T01_R01_VISA_CREDIT_ECOM" enabled="true">
+            <stringProp name="configKey"></stringProp>
+            <stringProp name="header"></stringProp>
+            <stringProp name="trailer"></stringProp>
+            <collectionProp name="fields">
+              <elementProp name="00" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="00">
+                <stringProp name="content">0100</stringProp>
+              </elementProp>
+              <elementProp name="02" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="02">
+                <stringProp name="content">${dp_cardno}</stringProp>
+              </elementProp>
+              <elementProp name="03" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="03">
+                <stringProp name="content">000000</stringProp>
+              </elementProp>
+              <elementProp name="04" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="04">
+                <stringProp name="content">${dp_amount}</stringProp>
+              </elementProp>
+              <elementProp name="07" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="07">
+                <stringProp name="content">${__time(MMddHHmmss,)}</stringProp>
+              </elementProp>
+              <elementProp name="11" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="11">
+                <stringProp name="content">${SCR23_dp_stan}</stringProp>
+              </elementProp>
+              <elementProp name="12" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="12">
+                <stringProp name="content">${__time(HHmmss,)}</stringProp>
+              </elementProp>
+              <elementProp name="13" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="13">
+                <stringProp name="content">${__time(MMdd,)}</stringProp>
+              </elementProp>
+              <elementProp name="14" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="14">
+                <stringProp name="content">${dp_expirey}</stringProp>
+              </elementProp>
+              <elementProp name="18" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="18">
+                <stringProp name="content">5947</stringProp>
+              </elementProp>
+              <elementProp name="19" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="19">
+                <stringProp name="content">0608</stringProp>
+              </elementProp>
+              <elementProp name="22" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="22">
+                <stringProp name="content">0100</stringProp>
+              </elementProp>
+              <elementProp name="23" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="23">
+                <stringProp name="content">0001</stringProp>
+              </elementProp>
+              <elementProp name="25" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="25">
+                <stringProp name="content">59</stringProp>
+              </elementProp>
+              <elementProp name="32" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="32">
+                <stringProp name="content">453248</stringProp>
+              </elementProp>
+              <elementProp name="37" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="37">
+                <stringProp name="content">${SCR23_dp_rrn}</stringProp>
+              </elementProp>
+              <elementProp name="41" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="41">
+                <stringProp name="content">TERMID01</stringProp>
+              </elementProp>
+              <elementProp name="42" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="42">
+                <stringProp name="content">CARD ACCEPTOR  </stringProp>
+              </elementProp>
+              <elementProp name="43" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="43">
+                <stringProp name="content">ACQUIRER NAME            CITY NAME    PH</stringProp>
+              </elementProp>
+              <elementProp name="49" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="49">
+                <stringProp name="content">0608</stringProp>
+              </elementProp>
+              <elementProp name="60" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="60">
+                <stringProp name="content">0900000007</stringProp>
+              </elementProp>
+              <elementProp name="62" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="62">
+                <stringProp name="content">00001000000000000000530000</stringProp>
+              </elementProp>
+              <elementProp name="63" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="63">
+                <stringProp name="content">810000000212345678</stringProp>
+              </elementProp>
+              <elementProp name="126" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="126">
+                <stringProp name="content">${dp_cvvdata}</stringProp>
+              </elementProp>
+            </collectionProp>
+            <stringProp name="timeout">${__groovy(${dp_timeout}*1000,)}</stringProp>
+            <stringProp name="responseCodeField">39</stringProp>
+            <stringProp name="successResponseCode">00</stringProp>
+          </nz.co.breakpoint.jmeter.iso8583.ISO8583Sampler>
+          <hashTree>
+            <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="true">
+              <intProp name="calcMode">2</intProp>
+              <stringProp name="throughput">${__groovy(${SCR23_tps}*60,)}</stringProp>
+            </ConstantThroughputTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="FileWrite" enabled="false">
+          <stringProp name="cacheKey">false</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters">${__time(yyyyMMddHHmmssSSS,dc_timestamp)}</stringProp>
+          <stringProp name="script">import org.apache.jmeter.services.FileServer;
+def FilePath = vars.get(&quot;dp_filepath&quot;);
+def cardNo =vars.get(&quot;dp_cardno&quot;);
+def stan = vars.get(&quot;SCR23_dp_stan&quot;);
+def rrn = vars.get(&quot;SCR23_dp_rrn&quot;);
+long responseTime = prev.getTime();
+def timeStamp = vars.get(&quot;dc_timestamp&quot;);
+
+f = new FileOutputStream(FilePath +&quot;/Filewrite/SCR23_RequestIdentifiers&quot;+&quot;.txt&quot;,true);
+p = new PrintStream(f);
+p.println(timeStamp + &quot;,&quot; + cardNo+ &quot;,&quot; + stan +  &quot;,&quot; + rrn + &quot;,&quot;+ responseTime );
+f.close();</stringProp>
+          <stringProp name="scriptLanguage">groovy</stringProp>
+        </JSR223Sampler>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SCR24_VISA_CREDIT_MOTO" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <intProp name="LoopController.loops">-1</intProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">${SCR24_tps}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${dp_rampup}</stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">${dp_duration}</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
+        <boolProp name="ThreadGroup.delayedStart">false</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+          <stringProp name="delimiter">,</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="filename">${dp_filepath}/DataFile/SCR24_VISA_CREDIT_MOTO_DataFile.txt</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="variableNames">dp_cardno,dp_expirey,dp_amount,dp_cvvdata</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="SCR24_dp_stan" enabled="true">
+          <stringProp name="CounterConfig.start">${SCR24_dp_stanstart}</stringProp>
+          <stringProp name="CounterConfig.end">999999</stringProp>
+          <stringProp name="CounterConfig.incr">1</stringProp>
+          <stringProp name="CounterConfig.name">SCR24_dp_stan</stringProp>
+          <stringProp name="CounterConfig.format">000000</stringProp>
+          <boolProp name="CounterConfig.per_user">false</boolProp>
+        </CounterConfig>
+        <hashTree/>
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="SCR24_dp_rrn" enabled="true">
+          <stringProp name="CounterConfig.start">${SCR24_dp_rrnstart}</stringProp>
+          <stringProp name="CounterConfig.end">999999999999</stringProp>
+          <stringProp name="CounterConfig.incr">1</stringProp>
+          <stringProp name="CounterConfig.name">SCR24_dp_rrn</stringProp>
+          <stringProp name="CounterConfig.format">000000000000</stringProp>
+          <boolProp name="CounterConfig.per_user">false</boolProp>
+        </CounterConfig>
+        <hashTree/>
+        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once Only Controller" enabled="true"/>
+        <hashTree>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">${__groovy(${dp_waittime}*1000,)}</stringProp>
+          </TestAction>
+          <hashTree/>
+        </hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname=" SCR24_T01_VISA_CREDIT_MOTO" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <nz.co.breakpoint.jmeter.iso8583.ISO8583Sampler guiclass="TestBeanGUI" testclass="nz.co.breakpoint.jmeter.iso8583.ISO8583Sampler" testname=" SCR24_T01_VISA_CREDIT_MOTO" enabled="true">
+            <stringProp name="configKey"></stringProp>
+            <stringProp name="header"></stringProp>
+            <stringProp name="trailer"></stringProp>
+            <collectionProp name="fields">
+              <elementProp name="0" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="0">
+                <stringProp name="content">0100</stringProp>
+              </elementProp>
+              <elementProp name="2" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="2">
+                <stringProp name="content">${dp_cardno}</stringProp>
+              </elementProp>
+              <elementProp name="3" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="3">
+                <stringProp name="content">000000</stringProp>
+              </elementProp>
+              <elementProp name="4" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="4">
+                <stringProp name="content">${dp_amount}</stringProp>
+              </elementProp>
+              <elementProp name="7" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="7">
+                <stringProp name="content">${__time(MMddHHmmss,)}</stringProp>
+              </elementProp>
+              <elementProp name="11" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="11">
+                <stringProp name="content">${SCR24_dp_stan}</stringProp>
+              </elementProp>
+              <elementProp name="12" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="12">
+                <stringProp name="content">${__time(HHmmss,)}</stringProp>
+              </elementProp>
+              <elementProp name="13" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="13">
+                <stringProp name="content">${__time(MMdd,)}</stringProp>
+              </elementProp>
+              <elementProp name="14" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="14">
+                <stringProp name="content">${dp_expirey}</stringProp>
+              </elementProp>
+              <elementProp name="18" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="18">
+                <stringProp name="content">5972</stringProp>
+              </elementProp>
+              <elementProp name="19" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="19">
+                <stringProp name="content">0608</stringProp>
+              </elementProp>
+              <elementProp name="22" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="22">
+                <stringProp name="content">0120</stringProp>
+              </elementProp>
+              <elementProp name="25" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="25">
+                <stringProp name="content">08</stringProp>
+              </elementProp>
+              <elementProp name="32" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="32">
+                <stringProp name="content">453972</stringProp>
+              </elementProp>
+              <elementProp name="37" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="37">
+                <stringProp name="content">${SCR24_dp_rrn}</stringProp>
+              </elementProp>
+              <elementProp name="41" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="41">
+                <stringProp name="content">TERMID01</stringProp>
+              </elementProp>
+              <elementProp name="42" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="42">
+                <stringProp name="content">CARD ACCEPTOR  </stringProp>
+              </elementProp>
+              <elementProp name="43" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="43">
+                <stringProp name="content">ACQUIRER NAME CITY NAME PH</stringProp>
+              </elementProp>
+              <elementProp name="49" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="49">
+                <stringProp name="content">0608</stringProp>
+              </elementProp>
+              <elementProp name="60" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="60">
+                <stringProp name="content">00</stringProp>
+              </elementProp>
+              <elementProp name="62" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="62">
+                <stringProp name="content">00001000000000000000530000</stringProp>
+              </elementProp>
+              <elementProp name="63" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="63">
+                <stringProp name="content">810000000212345678</stringProp>
+              </elementProp>
+              <elementProp name="126" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="126">
+                <stringProp name="content">${dp_cvvdata}</stringProp>
+                <stringProp name="TestPlan.comments">11 XXX</stringProp>
+              </elementProp>
+            </collectionProp>
+            <stringProp name="timeout">${__groovy(${dp_timeout}*1000,)}</stringProp>
+            <stringProp name="responseCodeField">39</stringProp>
+            <stringProp name="successResponseCode">00</stringProp>
+          </nz.co.breakpoint.jmeter.iso8583.ISO8583Sampler>
+          <hashTree>
+            <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="true">
+              <intProp name="calcMode">2</intProp>
+              <stringProp name="throughput">${__groovy(${SCR24_tps}*60,)}</stringProp>
+            </ConstantThroughputTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="FileWrite" enabled="false">
+          <stringProp name="cacheKey">false</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters">${__time(yyyyMMddHHmmssSSS,dc_timestamp)}</stringProp>
+          <stringProp name="script">import org.apache.jmeter.services.FileServer;
+def FilePath = vars.get(&quot;dp_filepath&quot;);
+def cardNo =vars.get(&quot;dp_cardno&quot;);
+def stan = vars.get(&quot;SCR24_dp_stan&quot;);
+def rrn = vars.get(&quot;SCR24_dp_rrn&quot;);
+long responseTime = prev.getTime();
+def timeStamp = vars.get(&quot;dc_timestamp&quot;);
+
+f = new FileOutputStream(FilePath +&quot;/Filewrite/SCR24_RequestIdentifiers&quot;+&quot;.txt&quot;,true);
+p = new PrintStream(f);
+p.println(timeStamp + &quot;,&quot; + cardNo+ &quot;,&quot; + stan +  &quot;,&quot; + rrn + &quot;,&quot;+ responseTime );
+f.close();</stringProp>
+          <stringProp name="scriptLanguage">groovy</stringProp>
+        </JSR223Sampler>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SCR25_VISA_CREDIT_ATM_WITHDRAWL" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <intProp name="LoopController.loops">-1</intProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">${SCR25_tps}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${dp_rampup}</stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">${dp_duration}</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
+        <boolProp name="ThreadGroup.delayedStart">false</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+          <stringProp name="delimiter">,</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="filename">${dp_filepath}/DataFile/SCR25_VISA_CREDIT_ATM_WITHDRAWL_DataFile.txt</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="variableNames">dp_cardno,dp_expirey,dp_track2,dp_amount</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="SCR25_dp_stan" enabled="true">
+          <stringProp name="CounterConfig.start">${SCR25_dp_stanstart}</stringProp>
+          <stringProp name="CounterConfig.end">999999</stringProp>
+          <stringProp name="CounterConfig.incr">1</stringProp>
+          <stringProp name="CounterConfig.name">SCR25_dp_stan</stringProp>
+          <stringProp name="CounterConfig.format">000000</stringProp>
+          <boolProp name="CounterConfig.per_user">false</boolProp>
+        </CounterConfig>
+        <hashTree/>
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="SCR25_dp_rrn" enabled="true">
+          <stringProp name="CounterConfig.start">${SCR25_dp_rrnstart}</stringProp>
+          <stringProp name="CounterConfig.end">999999999999</stringProp>
+          <stringProp name="CounterConfig.incr">1</stringProp>
+          <stringProp name="CounterConfig.name">SCR25_dp_rrn</stringProp>
+          <stringProp name="CounterConfig.format">000000000000</stringProp>
+          <boolProp name="CounterConfig.per_user">false</boolProp>
+        </CounterConfig>
+        <hashTree/>
+        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once Only Controller" enabled="true"/>
+        <hashTree>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">${__groovy(${dp_waittime}*1000,)}</stringProp>
+          </TestAction>
+          <hashTree/>
+        </hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SCR25_T01_VISA_CREDIT_ATM_WITHDRAWL" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <nz.co.breakpoint.jmeter.iso8583.ISO8583Sampler guiclass="TestBeanGUI" testclass="nz.co.breakpoint.jmeter.iso8583.ISO8583Sampler" testname="SCR25_T01_R01_VISA_CREDIT_ATM_WITHDRAWL" enabled="true">
+            <stringProp name="configKey"></stringProp>
+            <stringProp name="header"></stringProp>
+            <stringProp name="trailer"></stringProp>
+            <collectionProp name="fields">
+              <elementProp name="0" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="0">
+                <stringProp name="content">0100</stringProp>
+              </elementProp>
+              <elementProp name="2" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="2">
+                <stringProp name="content">${dp_cardno}</stringProp>
+              </elementProp>
+              <elementProp name="3" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="3">
+                <stringProp name="content">010000</stringProp>
+              </elementProp>
+              <elementProp name="4" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="4">
+                <stringProp name="content">${dp_amount}</stringProp>
+              </elementProp>
+              <elementProp name="7" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="7">
+                <stringProp name="content">${__time(MMddHHmmss,)}</stringProp>
+              </elementProp>
+              <elementProp name="11" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="11">
+                <stringProp name="content">${SCR25_dp_stan}</stringProp>
+              </elementProp>
+              <elementProp name="12" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="12">
+                <stringProp name="content">${__time(HHmmss,)}</stringProp>
+              </elementProp>
+              <elementProp name="13" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="13">
+                <stringProp name="content">${__time(MMdd,)}</stringProp>
+              </elementProp>
+              <elementProp name="14" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="14">
+                <stringProp name="content">${dp_expirey}</stringProp>
+              </elementProp>
+              <elementProp name="18" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="18">
+                <stringProp name="content">6011</stringProp>
+              </elementProp>
+              <elementProp name="19" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="19">
+                <stringProp name="content">0608</stringProp>
+              </elementProp>
+              <elementProp name="22" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="22">
+                <stringProp name="content">0510</stringProp>
+              </elementProp>
+              <elementProp name="23" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="23">
+                <stringProp name="content">0001</stringProp>
+              </elementProp>
+              <elementProp name="25" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="25">
+                <stringProp name="content">02</stringProp>
+              </elementProp>
+              <elementProp name="28" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="28">
+                <stringProp name="content">D0000100</stringProp>
+              </elementProp>
+              <elementProp name="32" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="32">
+                <stringProp name="content">453248</stringProp>
+              </elementProp>
+              <elementProp name="35" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="35">
+                <stringProp name="content">${dp_track2}</stringProp>
+              </elementProp>
+              <elementProp name="37" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="37">
+                <stringProp name="content">${SCR25_dp_rrn}</stringProp>
+              </elementProp>
+              <elementProp name="41" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="41">
+                <stringProp name="content">ATM01</stringProp>
+              </elementProp>
+              <elementProp name="42" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="42">
+                <stringProp name="content">CARD ACCEPTOR  </stringProp>
+              </elementProp>
+              <elementProp name="43" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="43">
+                <stringProp name="content">ACQUIRER NAME CITY NAME PH</stringProp>
+              </elementProp>
+              <elementProp name="48" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="48">
+                <stringProp name="content">ff5cc6c9c5d3c440f4f840e4e2c1c7c540f240c4c1e3c140e6c9e3c840d4c1e7c9d4e4d440d3c5d5c7e3c840f2f5f540c2e8e3c5e2406040f5f740f6f040f6f340f6f640f6f940f7f240f7f540f7f840f8f140f8f440f8f740f9f040f9f340f9f640f9f940f1f0f340f1f0f740f1f1f140f1f1f540f1f1f940f1f2f340f1f2f740f1f3f140f1f3f540f1f3f940f1f4f340f1f4f740f1f5f140f1f5f540f1f5f940f1f6f340f1f6f740f1f7f140f1f7f540f1f7f940f1f8f340f1f8f740f1f9f140f1f9f540f1f9f940f2f0f340f2f0f740f2f1f140f2f1f540f2f1f940f2f2f340f2f2f740f2f3f140f2f3f540f2f3f940f2f4f340f2f4f740f2f5f140f2f5f5</stringProp>
+              </elementProp>
+              <elementProp name="49" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="49">
+                <stringProp name="content">0608</stringProp>
+              </elementProp>
+              <elementProp name="52" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="52">
+                <stringProp name="content">6c7e21423048c388</stringProp>
+              </elementProp>
+              <elementProp name="53" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="53">
+                <stringProp name="content">2001010100000000</stringProp>
+              </elementProp>
+              <elementProp name="55.1" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.1">
+                <stringProp name="content">01</stringProp>
+              </elementProp>
+              <elementProp name="55.2.1" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.1">
+                <stringProp name="tag">95</stringProp>
+                <stringProp name="content">8000010000</stringProp>
+              </elementProp>
+              <elementProp name="55.2.2" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.2">
+                <stringProp name="tag">9f37</stringProp>
+                <stringProp name="content">9badbcab</stringProp>
+              </elementProp>
+              <elementProp name="55.2.3" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.3">
+                <stringProp name="tag">9f10</stringProp>
+                <stringProp name="content">06021203a0b000</stringProp>
+              </elementProp>
+              <elementProp name="55.2.4" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.4">
+                <stringProp name="tag">9f26</stringProp>
+                <stringProp name="content">ccfd5299787e4a32</stringProp>
+              </elementProp>
+              <elementProp name="55.2.5" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.5">
+                <stringProp name="tag">9f36</stringProp>
+                <stringProp name="content">0009</stringProp>
+              </elementProp>
+              <elementProp name="55.2.6" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.6">
+                <stringProp name="tag">82</stringProp>
+                <stringProp name="content">0000</stringProp>
+              </elementProp>
+              <elementProp name="55.2.7" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.7">
+                <stringProp name="tag">9c</stringProp>
+                <stringProp name="content">01</stringProp>
+              </elementProp>
+              <elementProp name="55.2.8" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.8">
+                <stringProp name="tag">9f1a</stringProp>
+                <stringProp name="content">0608</stringProp>
+              </elementProp>
+              <elementProp name="55.2.9" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.9">
+                <stringProp name="tag">9a</stringProp>
+                <stringProp name="content">240110</stringProp>
+              </elementProp>
+              <elementProp name="55.2.10" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.10">
+                <stringProp name="tag">9f02</stringProp>
+                <stringProp name="content">000000012300</stringProp>
+              </elementProp>
+              <elementProp name="55.2.11" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.11">
+                <stringProp name="tag">5f2a</stringProp>
+                <stringProp name="content">0608</stringProp>
+              </elementProp>
+              <elementProp name="55.2.12" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.12">
+                <stringProp name="tag">9f03</stringProp>
+                <stringProp name="content">000000000000</stringProp>
+              </elementProp>
+              <elementProp name="55.2.13" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.13">
+                <stringProp name="tag">9f6e</stringProp>
+                <stringProp name="content">00000001</stringProp>
+              </elementProp>
+              <elementProp name="55.2.14" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.14">
+                <stringProp name="tag">84</stringProp>
+                <stringProp name="content">a0000000031010</stringProp>
+              </elementProp>
+              <elementProp name="60" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="60">
+                <stringProp name="content">25000010</stringProp>
+              </elementProp>
+              <elementProp name="62" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="62">
+                <stringProp name="content">8000000000000000e8</stringProp>
+              </elementProp>
+              <elementProp name="63" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="63">
+                <stringProp name="content">8000000002</stringProp>
+              </elementProp>
+            </collectionProp>
+            <stringProp name="timeout">${__groovy(${dp_timeout}*1000,)}</stringProp>
+            <stringProp name="responseCodeField">39</stringProp>
+            <stringProp name="successResponseCode">00</stringProp>
+          </nz.co.breakpoint.jmeter.iso8583.ISO8583Sampler>
+          <hashTree>
+            <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="true">
+              <intProp name="calcMode">2</intProp>
+              <stringProp name="throughput">${__groovy(${SCR25_tps}*60,)}</stringProp>
+            </ConstantThroughputTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="FileWrite" enabled="false">
+          <stringProp name="cacheKey">false</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters">${__time(yyyyMMddHHmmssSSS,dc_timestamp)}</stringProp>
+          <stringProp name="script">import org.apache.jmeter.services.FileServer;
+def FilePath = vars.get(&quot;dp_filepath&quot;);
+def cardNo =vars.get(&quot;dp_cardno&quot;);
+def stan = vars.get(&quot;SCR25_dp_stan&quot;);
+def rrn = vars.get(&quot;SCR25_dp_rrn&quot;);
+long responseTime = prev.getTime();
+def timeStamp = vars.get(&quot;dc_timestamp&quot;);
+
+f = new FileOutputStream(FilePath +&quot;/Filewrite/SCR25_RequestIdentifiers&quot;+&quot;.txt&quot;,true);
+p = new PrintStream(f);
+p.println(timeStamp + &quot;,&quot; + cardNo+ &quot;,&quot; + stan +  &quot;,&quot; + rrn + &quot;,&quot;+ responseTime );
+f.close();</stringProp>
+          <stringProp name="scriptLanguage">groovy</stringProp>
+        </JSR223Sampler>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SCR26_VISA_CREDIT_POS_PURCHASE" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <intProp name="LoopController.loops">-1</intProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">${SCR26_tps}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${dp_rampup}</stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">${dp_duration}</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
+        <boolProp name="ThreadGroup.delayedStart">false</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+          <stringProp name="delimiter">,</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="filename">${dp_filepath}/DataFile/SCR26_VISA_CREDIT_POS_PURCHASE_DataFile.txt</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="variableNames">dp_cardno,dp_expirey,dp_track2,dp_amount</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="SCR26_dp_stan" enabled="true">
+          <stringProp name="CounterConfig.start">${SCR26_dp_stanstart}</stringProp>
+          <stringProp name="CounterConfig.end">999999</stringProp>
+          <stringProp name="CounterConfig.incr">1</stringProp>
+          <stringProp name="CounterConfig.name">SCR26_dp_stan</stringProp>
+          <stringProp name="CounterConfig.format">000000</stringProp>
+          <boolProp name="CounterConfig.per_user">false</boolProp>
+        </CounterConfig>
+        <hashTree/>
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="SCR26_dp_rrn" enabled="true">
+          <stringProp name="CounterConfig.start">${SCR26_dp_rrnstart}</stringProp>
+          <stringProp name="CounterConfig.end">999999999999</stringProp>
+          <stringProp name="CounterConfig.incr">1</stringProp>
+          <stringProp name="CounterConfig.name">SCR26_dp_rrn</stringProp>
+          <stringProp name="CounterConfig.format">000000000000</stringProp>
+          <boolProp name="CounterConfig.per_user">false</boolProp>
+        </CounterConfig>
+        <hashTree/>
+        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once Only Controller" enabled="true"/>
+        <hashTree>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">${__groovy(${dp_waittime}*1000,)}</stringProp>
+          </TestAction>
+          <hashTree/>
+        </hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SCR26_T01_VISA_CREDIT_POS_PURCHASE" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <nz.co.breakpoint.jmeter.iso8583.ISO8583Sampler guiclass="TestBeanGUI" testclass="nz.co.breakpoint.jmeter.iso8583.ISO8583Sampler" testname="SCR26_T01_R01_VISA_CREDIT_POS_PURCHASE" enabled="true">
+            <stringProp name="configKey"></stringProp>
+            <stringProp name="header"></stringProp>
+            <stringProp name="trailer"></stringProp>
+            <collectionProp name="fields">
+              <elementProp name="00" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="00">
+                <stringProp name="content">0100</stringProp>
+              </elementProp>
+              <elementProp name="02" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="02">
+                <stringProp name="content">${dp_cardno}</stringProp>
+              </elementProp>
+              <elementProp name="03" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="03">
+                <stringProp name="content">000000</stringProp>
+              </elementProp>
+              <elementProp name="04" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="04">
+                <stringProp name="content">${dp_amount}</stringProp>
+              </elementProp>
+              <elementProp name="07" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="07">
+                <stringProp name="content">${__time(MMddHHmmss,)}</stringProp>
+              </elementProp>
+              <elementProp name="11" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="11">
+                <stringProp name="content">${SCR26_dp_stan}</stringProp>
+              </elementProp>
+              <elementProp name="12" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="12">
+                <stringProp name="content">${__time(HHmmss,)}</stringProp>
+              </elementProp>
+              <elementProp name="13" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="13">
+                <stringProp name="content">${__time(MMdd,)}</stringProp>
+              </elementProp>
+              <elementProp name="14" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="14">
+                <stringProp name="content">${dp_expirey}</stringProp>
+              </elementProp>
+              <elementProp name="18" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="18">
+                <stringProp name="content">5411</stringProp>
+              </elementProp>
+              <elementProp name="19" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="19">
+                <stringProp name="content">0608</stringProp>
+              </elementProp>
+              <elementProp name="22" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="22">
+                <stringProp name="content">0520</stringProp>
+              </elementProp>
+              <elementProp name="23" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="23">
+                <stringProp name="content">0001</stringProp>
+              </elementProp>
+              <elementProp name="25" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="25">
+                <stringProp name="content">00</stringProp>
+              </elementProp>
+              <elementProp name="32" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="32">
+                <stringProp name="content">453248</stringProp>
+                <stringProp name="tag"></stringProp>
+              </elementProp>
+              <elementProp name="35" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="35">
+                <stringProp name="content">${dp_track2}</stringProp>
+              </elementProp>
+              <elementProp name="37" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="37">
+                <stringProp name="content">${SCR26_dp_rrn}</stringProp>
+              </elementProp>
+              <elementProp name="41" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="41">
+                <stringProp name="content">7.1</stringProp>
+              </elementProp>
+              <elementProp name="42" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="42">
+                <stringProp name="content">CARD ACCEPTOR  </stringProp>
+              </elementProp>
+              <elementProp name="43" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="43">
+                <stringProp name="content">ACQUIRER NAME CITY NAME PH</stringProp>
+              </elementProp>
+              <elementProp name="48" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="48">
+                <stringProp name="content">ff5cc6c9c5d3c440f4f840e4e2c1c7c540f9c140c4c1e3c140e6c9e3c840d4c1e7c9d4e4d440d3c5d5c7e3c840f2f5f540c2e8e3c5e26040f5f740f6f040f6f340f6f640f6f940f7f240f7f540f7f840f8f140f8f440f8f740f9f040f9f340f9f640f9f940f1f0f340f1f0f740f1f1f140f1f1f540f1f1f940f1f2f340f1f2f740f1f3f140f1f3f540f1f3f940f1f4f340f1f4f740f1f5f140f1f5f540f1f5f940f1f6f340f1f6f740f1f7f140f1f7f540f1f7f940f1f8f340f1f8f740f1f9f140f1f9f540f1f9f940f2f0f340f2f0f740f2f1f140f2f1f540f2f1f940f2f2f340f2f2f740f2f3f140f2f3f540f2f3f940f2f4f340f2f4f740f2f5f140f2f5f5</stringProp>
+              </elementProp>
+              <elementProp name="49" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="49">
+                <stringProp name="content">0608</stringProp>
+              </elementProp>
+              <elementProp name="55.1" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.1">
+                <stringProp name="content">01</stringProp>
+              </elementProp>
+              <elementProp name="55.2.1" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.1">
+                <stringProp name="content">204000</stringProp>
+                <stringProp name="tag">9f33</stringProp>
+              </elementProp>
+              <elementProp name="55.2.2" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.2">
+                <stringProp name="content">8000010000</stringProp>
+                <stringProp name="tag">95</stringProp>
+              </elementProp>
+              <elementProp name="55.2.3" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.3">
+                <stringProp name="content">35262092</stringProp>
+                <stringProp name="tag">9f37</stringProp>
+              </elementProp>
+              <elementProp name="55.2.4" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.4">
+                <stringProp name="content">06021203a0b000</stringProp>
+                <stringProp name="tag">9f10</stringProp>
+              </elementProp>
+              <elementProp name="55.2.5" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.5">
+                <stringProp name="content">ba46839459d9996b</stringProp>
+                <stringProp name="tag">9f26</stringProp>
+              </elementProp>
+              <elementProp name="55.2.6" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.6">
+                <stringProp name="content">0007</stringProp>
+                <stringProp name="tag">9f36</stringProp>
+              </elementProp>
+              <elementProp name="55.2.7" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.7">
+                <stringProp name="content">0000</stringProp>
+                <stringProp name="tag">82</stringProp>
+              </elementProp>
+              <elementProp name="55.2.8" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.8">
+                <stringProp name="content">00</stringProp>
+                <stringProp name="tag">9c</stringProp>
+              </elementProp>
+              <elementProp name="55.2.9" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.9">
+                <stringProp name="content">0608</stringProp>
+                <stringProp name="tag">9f1a</stringProp>
+              </elementProp>
+              <elementProp name="55.2.10" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.10">
+                <stringProp name="content">240110</stringProp>
+                <stringProp name="tag">9a</stringProp>
+              </elementProp>
+              <elementProp name="55.2.11" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.11">
+                <stringProp name="content">000000012300</stringProp>
+                <stringProp name="tag">9f02</stringProp>
+              </elementProp>
+              <elementProp name="55.2.12" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.12">
+                <stringProp name="content">0608</stringProp>
+                <stringProp name="tag">5f2a</stringProp>
+              </elementProp>
+              <elementProp name="55.2.13" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.13">
+                <stringProp name="content">000000000000</stringProp>
+                <stringProp name="tag">9f03</stringProp>
+              </elementProp>
+              <elementProp name="55.2.14" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.14">
+                <stringProp name="content">a0000000031010</stringProp>
+                <stringProp name="tag">84</stringProp>
+              </elementProp>
+              <elementProp name="60" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="60">
+                <stringProp name="content">05000010</stringProp>
+              </elementProp>
+              <elementProp name="62" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="62">
+                <stringProp name="content">0000000000000000</stringProp>
+              </elementProp>
+              <elementProp name="63" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="63">
+                <stringProp name="content">8000000002</stringProp>
+              </elementProp>
+            </collectionProp>
+            <stringProp name="timeout">${__groovy(${dp_timeout}*1000,)}000</stringProp>
+            <stringProp name="responseCodeField">39</stringProp>
+            <stringProp name="successResponseCode">00</stringProp>
+          </nz.co.breakpoint.jmeter.iso8583.ISO8583Sampler>
+          <hashTree>
+            <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="true">
+              <intProp name="calcMode">2</intProp>
+              <stringProp name="throughput">${__groovy(${SCR26_tps}*60,)}</stringProp>
+            </ConstantThroughputTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="FileWrite" enabled="false">
+          <stringProp name="cacheKey">false</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters">${__time(yyyyMMddHHmmssSSS,dc_timestamp)}</stringProp>
+          <stringProp name="script">import org.apache.jmeter.services.FileServer;
+def FilePath = vars.get(&quot;dp_filepath&quot;);
+def cardNo =vars.get(&quot;dp_cardno&quot;);
+def stan = vars.get(&quot;SCR26_dp_stan&quot;);
+def rrn = vars.get(&quot;SCR26_dp_rrn&quot;);
+long responseTime = prev.getTime();
+def timeStamp = vars.get(&quot;dc_timestamp&quot;);
+
+f = new FileOutputStream(FilePath +&quot;/Filewrite/SCR26_RequestIdentifiers&quot;+&quot;.txt&quot;,true);
+p = new PrintStream(f);
+p.println(timeStamp + &quot;,&quot; + cardNo+ &quot;,&quot; + stan +  &quot;,&quot; + rrn + &quot;,&quot;+ responseTime );
+f.close();</stringProp>
+          <stringProp name="scriptLanguage">groovy</stringProp>
+        </JSR223Sampler>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SCR27_VISA_CREDIT_ATM_BALANCE_INQUIRY" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <intProp name="LoopController.loops">-1</intProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">${SCR27_tps}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${dp_rampup}</stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">${dp_duration}</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
+        <boolProp name="ThreadGroup.delayedStart">false</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+          <stringProp name="delimiter">,</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="filename">${dp_filepath}/DataFile/SCR27_VISA_CREDIT_ATM_BALANCE_INQUIRY_DataFile.txt</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="variableNames">dp_cardno,dp_expirey,dp_track2,dp_amount</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="SCR27_dp_stan" enabled="true">
+          <stringProp name="CounterConfig.start">${SCR27_dp_stanstart}</stringProp>
+          <stringProp name="CounterConfig.end">999999</stringProp>
+          <stringProp name="CounterConfig.incr">1</stringProp>
+          <stringProp name="CounterConfig.name">SCR27_dp_stan</stringProp>
+          <stringProp name="CounterConfig.format">000000</stringProp>
+          <boolProp name="CounterConfig.per_user">false</boolProp>
+        </CounterConfig>
+        <hashTree/>
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="SCR27_dp_rrn" enabled="true">
+          <stringProp name="CounterConfig.start">${SCR27_dp_rrnstart}</stringProp>
+          <stringProp name="CounterConfig.end">999999999999</stringProp>
+          <stringProp name="CounterConfig.incr">1</stringProp>
+          <stringProp name="CounterConfig.name">SCR27_dp_rrn</stringProp>
+          <stringProp name="CounterConfig.format">000000000000</stringProp>
+          <boolProp name="CounterConfig.per_user">false</boolProp>
+        </CounterConfig>
+        <hashTree/>
+        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once Only Controller" enabled="true"/>
+        <hashTree>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">${__groovy(${dp_waittime}*1000,)}</stringProp>
+          </TestAction>
+          <hashTree/>
+        </hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SCR27_T01_VISA_CREDIT_ATM_BALANCE_INQUIRY" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <nz.co.breakpoint.jmeter.iso8583.ISO8583Sampler guiclass="TestBeanGUI" testclass="nz.co.breakpoint.jmeter.iso8583.ISO8583Sampler" testname="SCR27_T01_R01_VISA_CREDIT_ATM_BALANCE_INQUIRY" enabled="true">
+            <stringProp name="configKey"></stringProp>
+            <stringProp name="header"></stringProp>
+            <stringProp name="trailer"></stringProp>
+            <collectionProp name="fields">
+              <elementProp name="0" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="0">
+                <stringProp name="content">0100</stringProp>
+              </elementProp>
+              <elementProp name="2" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="2">
+                <stringProp name="content">${dp_cardno}</stringProp>
+              </elementProp>
+              <elementProp name="3" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="3">
+                <stringProp name="content">300000</stringProp>
+              </elementProp>
+              <elementProp name="7" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="7">
+                <stringProp name="content">${__time(MMddHHmmss,)}</stringProp>
+              </elementProp>
+              <elementProp name="11" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="11">
+                <stringProp name="content">${SCR27_dp_stan}</stringProp>
+              </elementProp>
+              <elementProp name="12" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="12">
+                <stringProp name="content">${__time(HHmmss,)}</stringProp>
+              </elementProp>
+              <elementProp name="13" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="13">
+                <stringProp name="content">${__time(MMdd,)}</stringProp>
+              </elementProp>
+              <elementProp name="14" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="14">
+                <stringProp name="content">${dp_expirey}</stringProp>
+              </elementProp>
+              <elementProp name="18" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="18">
+                <stringProp name="content">6011</stringProp>
+              </elementProp>
+              <elementProp name="19" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="19">
+                <stringProp name="content">0608</stringProp>
+              </elementProp>
+              <elementProp name="22" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="22">
+                <stringProp name="content">0510</stringProp>
+              </elementProp>
+              <elementProp name="23" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="23">
+                <stringProp name="content">0001</stringProp>
+              </elementProp>
+              <elementProp name="25" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="25">
+                <stringProp name="content">02</stringProp>
+              </elementProp>
+              <elementProp name="32" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="32">
+                <stringProp name="content">453248</stringProp>
+              </elementProp>
+              <elementProp name="35" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="35">
+                <stringProp name="content">${dp_track2}</stringProp>
+              </elementProp>
+              <elementProp name="37" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="37">
+                <stringProp name="content">${SCR27_dp_rrn}</stringProp>
+              </elementProp>
+              <elementProp name="41" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="41">
+                <stringProp name="content">ATM01</stringProp>
+              </elementProp>
+              <elementProp name="42" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="42">
+                <stringProp name="content">CARD ACCEPTOR  </stringProp>
+              </elementProp>
+              <elementProp name="43" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="43">
+                <stringProp name="content">ACQUIRER NAME CITY NAME PH</stringProp>
+              </elementProp>
+              <elementProp name="48" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="48">
+                <stringProp name="content">ff5cc6c9c5d3c440f4f840e4e2c1c7c540f240c4c1e3c140e6c9e3c840d4c1e7c9d4e4d440d3c5d5c7e3c840f2f5f540c2e8e3c5e2406040f5f740f6f040f6f340f6f640f6f940f7f240f7f540f7f840f8f140f8f440f8f740f9f040f9f340f9f640f9f940f1f0f340f1f0f740f1f1f140f1f1f540f1f1f940f1f2f340f1f2f740f1f3f140f1f3f540f1f3f940f1f4f340f1f4f740f1f5f140f1f5f540f1f5f940f1f6f340f1f6f740f1f7f140f1f7f540f1f7f940f1f8f340f1f8f740f1f9f140f1f9f540f1f9f940f2f0f340f2f0f740f2f1f140f2f1f540f2f1f940f2f2f340f2f2f740f2f3f140f2f3f540f2f3f940f2f4f340f2f4f740f2f5f140f2f5f5</stringProp>
+              </elementProp>
+              <elementProp name="49" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="49">
+                <stringProp name="content">0608</stringProp>
+              </elementProp>
+              <elementProp name="52" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="52">
+                <stringProp name="content">6c7e21423048c388</stringProp>
+                <stringProp name="tag"></stringProp>
+                <stringProp name="TestPlan.comments">Pinblock</stringProp>
+              </elementProp>
+              <elementProp name="53" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="53">
+                <stringProp name="content">2001010100000000</stringProp>
+              </elementProp>
+              <elementProp name="55.1" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.1">
+                <stringProp name="content">01</stringProp>
+              </elementProp>
+              <elementProp name="55.2.1" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.1">
+                <stringProp name="tag">9f33</stringProp>
+                <stringProp name="content">204000</stringProp>
+              </elementProp>
+              <elementProp name="55.2.2" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.2">
+                <stringProp name="content">8000010000</stringProp>
+                <stringProp name="tag">95</stringProp>
+              </elementProp>
+              <elementProp name="55.2.3" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.3">
+                <stringProp name="tag">9f37</stringProp>
+                <stringProp name="content">9badbcab</stringProp>
+              </elementProp>
+              <elementProp name="55.2.4" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.4">
+                <stringProp name="tag">9f10</stringProp>
+                <stringProp name="content">06021203a0b000</stringProp>
+              </elementProp>
+              <elementProp name="55.2.5" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.5">
+                <stringProp name="content">722d0f238676aff2</stringProp>
+                <stringProp name="tag">9f26</stringProp>
+              </elementProp>
+              <elementProp name="55.2.6" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.6">
+                <stringProp name="tag">9f36</stringProp>
+                <stringProp name="content">000a</stringProp>
+              </elementProp>
+              <elementProp name="55.2.7" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.7">
+                <stringProp name="tag">82</stringProp>
+                <stringProp name="content">0000</stringProp>
+              </elementProp>
+              <elementProp name="55.2.8" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.8">
+                <stringProp name="tag">9c</stringProp>
+                <stringProp name="content">30</stringProp>
+              </elementProp>
+              <elementProp name="55.2.9" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.9">
+                <stringProp name="tag">9f1a</stringProp>
+                <stringProp name="content">0608</stringProp>
+              </elementProp>
+              <elementProp name="55.2.10" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.10">
+                <stringProp name="tag">9a</stringProp>
+                <stringProp name="content">240110</stringProp>
+              </elementProp>
+              <elementProp name="55.2.11" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.11">
+                <stringProp name="tag">9f02</stringProp>
+                <stringProp name="content">000000012300</stringProp>
+              </elementProp>
+              <elementProp name="55.2.12" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.12">
+                <stringProp name="tag">5f2a</stringProp>
+                <stringProp name="content">0608</stringProp>
+              </elementProp>
+              <elementProp name="55.2.13" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.13">
+                <stringProp name="tag">9f03</stringProp>
+                <stringProp name="content">000000000000</stringProp>
+              </elementProp>
+              <elementProp name="55.2.14" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.14">
+                <stringProp name="tag">84</stringProp>
+                <stringProp name="content">a0000000031010</stringProp>
+              </elementProp>
+              <elementProp name="60" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="60">
+                <stringProp name="content">25000010</stringProp>
+                <stringProp name="TestPlan.comments">06802000</stringProp>
+              </elementProp>
+              <elementProp name="63" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="63">
+                <stringProp name="content">8020000002f0</stringProp>
+                <stringProp name="TestPlan.comments">f0</stringProp>
+              </elementProp>
+            </collectionProp>
+            <intProp name="timeout">10000</intProp>
+            <stringProp name="responseCodeField">39</stringProp>
+            <stringProp name="successResponseCode">00</stringProp>
+          </nz.co.breakpoint.jmeter.iso8583.ISO8583Sampler>
+          <hashTree>
+            <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="true">
+              <intProp name="calcMode">2</intProp>
+              <stringProp name="throughput">${__groovy(${SCR27_tps}*60,)}</stringProp>
+            </ConstantThroughputTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="FileWrite" enabled="false">
+          <stringProp name="cacheKey">false</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters">${__time(yyyyMMddHHmmssSSS,dc_timestamp)}</stringProp>
+          <stringProp name="script">import org.apache.jmeter.services.FileServer;
+def FilePath = vars.get(&quot;dp_filepath&quot;);
+def cardNo =vars.get(&quot;dp_cardno&quot;);
+def stan = vars.get(&quot;SCR27_dp_stan&quot;);
+def rrn = vars.get(&quot;SCR27_dp_rrn&quot;);
+long responseTime = prev.getTime();
+def timeStamp = vars.get(&quot;dc_timestamp&quot;);
+
+f = new FileOutputStream(FilePath +&quot;/Filewrite/SCR27_RequestIdentifiers&quot;+&quot;.txt&quot;,true);
+p = new PrintStream(f);
+p.println(timeStamp + &quot;,&quot; + cardNo+ &quot;,&quot; + stan +  &quot;,&quot; + rrn + &quot;,&quot;+ responseTime );
+f.close();</stringProp>
+          <stringProp name="scriptLanguage">groovy</stringProp>
+        </JSR223Sampler>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SCR28_VISA_CREDIT_POS_BALANCE_INQUIRY" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <intProp name="LoopController.loops">-1</intProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">${SCR28_tps}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${dp_rampup}</stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">${dp_duration}</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
+        <boolProp name="ThreadGroup.delayedStart">false</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+          <stringProp name="delimiter">,</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="filename">${dp_filepath}/DataFile/SCR28_VISA_CREDIT_POS_BALANCE_INQUIRY_DataFile.txt</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="variableNames">dp_cardno,dp_expirey,dp_track2,dp_amount</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="SCR28_dp_stan" enabled="true">
+          <stringProp name="CounterConfig.start">${SCR28_dp_stanstart}</stringProp>
+          <stringProp name="CounterConfig.end">999999</stringProp>
+          <stringProp name="CounterConfig.incr">1</stringProp>
+          <stringProp name="CounterConfig.name">SCR28_dp_stan</stringProp>
+          <stringProp name="CounterConfig.format">000000</stringProp>
+          <boolProp name="CounterConfig.per_user">false</boolProp>
+        </CounterConfig>
+        <hashTree/>
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="SCR28_dp_rrn" enabled="true">
+          <stringProp name="CounterConfig.start">${SCR28_dp_rrnstart}</stringProp>
+          <stringProp name="CounterConfig.end">999999999999</stringProp>
+          <stringProp name="CounterConfig.incr">1</stringProp>
+          <stringProp name="CounterConfig.name">SCR28_dp_rrn</stringProp>
+          <stringProp name="CounterConfig.format">000000000000</stringProp>
+          <boolProp name="CounterConfig.per_user">false</boolProp>
+        </CounterConfig>
+        <hashTree/>
+        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once Only Controller" enabled="true"/>
+        <hashTree>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">${__groovy(${dp_waittime}*1000,)}</stringProp>
+          </TestAction>
+          <hashTree/>
+        </hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SCR28_T01_VISA_CREDIT_POS_BALANCE_INQUIRY" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <nz.co.breakpoint.jmeter.iso8583.ISO8583Sampler guiclass="TestBeanGUI" testclass="nz.co.breakpoint.jmeter.iso8583.ISO8583Sampler" testname="SCR28_T01_R01_VISA_CREDIT_POS_BALANCE_INQUIRY" enabled="true">
+            <stringProp name="configKey"></stringProp>
+            <stringProp name="header"></stringProp>
+            <stringProp name="responseCodeField">39</stringProp>
+            <stringProp name="successResponseCode">00</stringProp>
+            <stringProp name="timeout">${__groovy(${dp_timeout}*1000,)}</stringProp>
+            <stringProp name="trailer"></stringProp>
+            <collectionProp name="fields">
+              <elementProp name="0" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="0">
+                <stringProp name="content">0100</stringProp>
+              </elementProp>
+              <elementProp name="2" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="2">
+                <stringProp name="content">${dp_cardno}</stringProp>
+              </elementProp>
+              <elementProp name="3" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="3">
+                <stringProp name="content">300000</stringProp>
+              </elementProp>
+              <elementProp name="4" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="4">
+                <stringProp name="content">${dp_amount}</stringProp>
+              </elementProp>
+              <elementProp name="7" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="7">
+                <stringProp name="content">${__time(MMddHHmmss,)}</stringProp>
+              </elementProp>
+              <elementProp name="11" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="11">
+                <stringProp name="content">${SCR28_dp_stan}</stringProp>
+              </elementProp>
+              <elementProp name="12" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="12">
+                <stringProp name="content">${__time(HHmmss,)}</stringProp>
+              </elementProp>
+              <elementProp name="13" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="13">
+                <stringProp name="content">${__time(MMdd,)}</stringProp>
+              </elementProp>
+              <elementProp name="14" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="14">
+                <stringProp name="content">${dp_expirey}</stringProp>
+              </elementProp>
+              <elementProp name="18" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="18">
+                <stringProp name="content">5411</stringProp>
+              </elementProp>
+              <elementProp name="19" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="19">
+                <stringProp name="content">0608</stringProp>
+              </elementProp>
+              <elementProp name="22" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="22">
+                <stringProp name="content">0520</stringProp>
+              </elementProp>
+              <elementProp name="23" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="23">
+                <stringProp name="content">0001</stringProp>
+              </elementProp>
+              <elementProp name="25" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="25">
+                <stringProp name="content">00</stringProp>
+              </elementProp>
+              <elementProp name="32" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="32">
+                <stringProp name="content">453248</stringProp>
+              </elementProp>
+              <elementProp name="35" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="35">
+                <stringProp name="content">${dp_track2}</stringProp>
+              </elementProp>
+              <elementProp name="37" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="37">
+                <stringProp name="content">${SCR28_dp_rrn}</stringProp>
+              </elementProp>
+              <elementProp name="41" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="41">
+                <stringProp name="content">7.1</stringProp>
+              </elementProp>
+              <elementProp name="42" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="42">
+                <stringProp name="content">CARD ACCEPTOR  </stringProp>
+              </elementProp>
+              <elementProp name="43" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="43">
+                <stringProp name="content">ACQUIRER NAME            CITY NAME    PH</stringProp>
+              </elementProp>
+              <elementProp name="48" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="48">
+                <stringProp name="content">ff5cc6c9c5d3c440f4f840e4e2c1c7c540f9c140c4c1e3c140e6c9e3c840d4c1e7c9d4e4d440d3c5d5c7e3c840f2f5f540c2e8e3c5e26040f5f740f6f040f6f340f6f640f6f940f7f240f7f540f7f840f8f140f8f440f8f740f9f040f9f340f9f640f9f940f1f0f340f1f0f740f1f1f140f1f1f540f1f1f940f1f2f340f1f2f740f1f3f140f1f3f540f1f3f940f1f4f340f1f4f740f1f5f140f1f5f540f1f5f940f1f6f340f1f6f740f1f7f140f1f7f540f1f7f940f1f8f340f1f8f740f1f9f140f1f9f540f1f9f940f2f0f340f2f0f740f2f1f140f2f1f540f2f1f940f2f2f340f2f2f740f2f3f140f2f3f540f2f3f940f2f4f340f2f4f740f2f5f140f2f5f5</stringProp>
+              </elementProp>
+              <elementProp name="49" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="49">
+                <stringProp name="content">0608</stringProp>
+              </elementProp>
+              <elementProp name="55.1" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.1">
+                <stringProp name="content">01</stringProp>
+              </elementProp>
+              <elementProp name="55.2.1" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.1">
+                <stringProp name="content">204000</stringProp>
+                <stringProp name="tag">9f33</stringProp>
+              </elementProp>
+              <elementProp name="55.2.2" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.2">
+                <stringProp name="content">8000010000</stringProp>
+                <stringProp name="tag">95</stringProp>
+              </elementProp>
+              <elementProp name="55.2.3" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.3">
+                <stringProp name="content">1b845bd0</stringProp>
+                <stringProp name="tag">9f37</stringProp>
+              </elementProp>
+              <elementProp name="55.2.4" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.4">
+                <stringProp name="content">06021203a0b000</stringProp>
+                <stringProp name="tag">9f10</stringProp>
+              </elementProp>
+              <elementProp name="55.2.5" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.5">
+                <stringProp name="content">10ade0d3970eb6ad</stringProp>
+                <stringProp name="tag">9f26</stringProp>
+              </elementProp>
+              <elementProp name="55.2.6" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.6">
+                <stringProp name="content">0008</stringProp>
+                <stringProp name="tag">9f36</stringProp>
+              </elementProp>
+              <elementProp name="55.2.7" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.7">
+                <stringProp name="content">0000</stringProp>
+                <stringProp name="tag">82</stringProp>
+              </elementProp>
+              <elementProp name="55.2.8" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.8">
+                <stringProp name="content">00</stringProp>
+                <stringProp name="tag">9c</stringProp>
+              </elementProp>
+              <elementProp name="55.2.9" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.9">
+                <stringProp name="content">0608</stringProp>
+                <stringProp name="tag">9f1a</stringProp>
+              </elementProp>
+              <elementProp name="55.2.10" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.10">
+                <stringProp name="content">240110</stringProp>
+                <stringProp name="tag">9a</stringProp>
+              </elementProp>
+              <elementProp name="55.2.11" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.11">
+                <stringProp name="content">000000012300</stringProp>
+                <stringProp name="tag">9f02</stringProp>
+              </elementProp>
+              <elementProp name="55.2.12" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.12">
+                <stringProp name="content">0608</stringProp>
+                <stringProp name="tag">5f2a</stringProp>
+              </elementProp>
+              <elementProp name="55.2.13" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.13">
+                <stringProp name="content">000000000000</stringProp>
+                <stringProp name="tag">9f03</stringProp>
+              </elementProp>
+              <elementProp name="55.2.14" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.14">
+                <stringProp name="content">a0000000031010</stringProp>
+                <stringProp name="tag">84</stringProp>
+              </elementProp>
+              <elementProp name="60" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="60">
+                <stringProp name="content">05000010</stringProp>
+              </elementProp>
+              <elementProp name="62" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="62">
+                <stringProp name="content">0000000000000000</stringProp>
+                <stringProp name="TestPlan.comments">Doubt</stringProp>
+              </elementProp>
+              <elementProp name="63" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="63">
+                <stringProp name="content">8000000002</stringProp>
+              </elementProp>
+            </collectionProp>
+          </nz.co.breakpoint.jmeter.iso8583.ISO8583Sampler>
+          <hashTree>
+            <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="true">
+              <intProp name="calcMode">2</intProp>
+              <stringProp name="throughput">${__groovy(${SCR28_tps}*60,)}</stringProp>
+            </ConstantThroughputTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="FileWrite" enabled="false">
+          <stringProp name="cacheKey">false</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters">${__time(yyyyMMddHHmmssSSS,dc_timestamp)}</stringProp>
+          <stringProp name="script">import org.apache.jmeter.services.FileServer;
+def FilePath = vars.get(&quot;dp_filepath&quot;);
+def cardNo =vars.get(&quot;dp_cardno&quot;);
+def stan = vars.get(&quot;SCR28_dp_stan&quot;);
+def rrn = vars.get(&quot;SCR28_dp_rrn&quot;);
+long responseTime = prev.getTime();
+def timeStamp = vars.get(&quot;dc_timestamp&quot;);
+
+f = new FileOutputStream(FilePath +&quot;/Filewrite/SCR28_RequestIdentifiers&quot;+&quot;.txt&quot;,true);
+p = new PrintStream(f);
+p.println(timeStamp + &quot;,&quot; + cardNo+ &quot;,&quot; + stan +  &quot;,&quot; + rrn + &quot;,&quot;+ responseTime );
+f.close();</stringProp>
+          <stringProp name="scriptLanguage">groovy</stringProp>
+        </JSR223Sampler>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SCR29_VISA_DEBIT_POS_PURCHASE" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <intProp name="LoopController.loops">-1</intProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">${SCR29_users}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${dp_rampup}</stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">${dp_duration}</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
+        <boolProp name="ThreadGroup.delayedStart">false</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+          <stringProp name="delimiter">,</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="filename">${dp_filepath}/DataFile/SCR29_VISA_DEBIT_POS_DataFile.txt.txt</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="variableNames">dp_cardno,dp_expirey,dp_track2,dp_amount</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="SCR29_dp_stan" enabled="true">
+          <stringProp name="CounterConfig.start">${SCR29_dp_stanstart}</stringProp>
+          <stringProp name="CounterConfig.end">999999</stringProp>
+          <stringProp name="CounterConfig.incr">1</stringProp>
+          <stringProp name="CounterConfig.name">SCR29_dp_stan</stringProp>
+          <stringProp name="CounterConfig.format">000000</stringProp>
+          <boolProp name="CounterConfig.per_user">false</boolProp>
+        </CounterConfig>
+        <hashTree/>
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="SCR29_dp_rrn" enabled="true">
+          <stringProp name="CounterConfig.start">${SCR29_dp_rrnstart}</stringProp>
+          <stringProp name="CounterConfig.end">999999999999</stringProp>
+          <stringProp name="CounterConfig.incr">1</stringProp>
+          <stringProp name="CounterConfig.name">SCR29_dp_rrn</stringProp>
+          <stringProp name="CounterConfig.format">000000000000</stringProp>
+          <boolProp name="CounterConfig.per_user">false</boolProp>
+        </CounterConfig>
+        <hashTree/>
+        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once Only Controller" enabled="true"/>
+        <hashTree>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">${__groovy(${dp_waittime}*1000,)}</stringProp>
+          </TestAction>
+          <hashTree/>
+        </hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SCR29_T01_VISA_DEBIT_POS_PURCHASE" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <nz.co.breakpoint.jmeter.iso8583.ISO8583Sampler guiclass="TestBeanGUI" testclass="nz.co.breakpoint.jmeter.iso8583.ISO8583Sampler" testname="SCR29_T01_R01_VISA_DEBIT_POS_PURCHASE" enabled="true">
+            <stringProp name="configKey"></stringProp>
+            <stringProp name="header"></stringProp>
+            <stringProp name="trailer"></stringProp>
+            <collectionProp name="fields">
+              <elementProp name="00" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="00">
+                <stringProp name="content">0100</stringProp>
+              </elementProp>
+              <elementProp name="02" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="02">
+                <stringProp name="content">${dp_cardno}</stringProp>
+              </elementProp>
+              <elementProp name="03" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="03">
+                <stringProp name="content">000011</stringProp>
+              </elementProp>
+              <elementProp name="04" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="04">
+                <stringProp name="content">${dp_amount}</stringProp>
+              </elementProp>
+              <elementProp name="07" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="07">
+                <stringProp name="content">${__time(MMddHHmmss,)}</stringProp>
+              </elementProp>
+              <elementProp name="11" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="11">
+                <stringProp name="content">${SCR29_dp_stan}</stringProp>
+              </elementProp>
+              <elementProp name="12" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="12">
+                <stringProp name="content">${__time(HHmmss,)}</stringProp>
+              </elementProp>
+              <elementProp name="13" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="13">
+                <stringProp name="content">${__time(MMdd,)}</stringProp>
+              </elementProp>
+              <elementProp name="14" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="14">
+                <stringProp name="content">${dp_expirey}</stringProp>
+              </elementProp>
+              <elementProp name="18" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="18">
+                <stringProp name="content">5411</stringProp>
+              </elementProp>
+              <elementProp name="19" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="19">
+                <stringProp name="content">0608</stringProp>
+              </elementProp>
+              <elementProp name="22" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="22">
+                <stringProp name="content">0520</stringProp>
+              </elementProp>
+              <elementProp name="23" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="23">
+                <stringProp name="content">0001</stringProp>
+              </elementProp>
+              <elementProp name="25" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="25">
+                <stringProp name="content">00</stringProp>
+              </elementProp>
+              <elementProp name="32" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="32">
+                <stringProp name="content">489012</stringProp>
+                <stringProp name="tag"></stringProp>
+              </elementProp>
+              <elementProp name="35" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="35">
+                <stringProp name="content">${dp_track2}</stringProp>
+              </elementProp>
+              <elementProp name="37" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="37">
+                <stringProp name="content">${SCR29_dp_rrn}</stringProp>
+              </elementProp>
+              <elementProp name="41" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="41">
+                <stringProp name="content">7.1</stringProp>
+              </elementProp>
+              <elementProp name="42" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="42">
+                <stringProp name="content">CARD ACCEPTOR  </stringProp>
+              </elementProp>
+              <elementProp name="43" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="43">
+                <stringProp name="content">ACQUIRER NAME CITY NAME PH</stringProp>
+              </elementProp>
+              <elementProp name="48" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="48">
+                <stringProp name="content">ff5cc6c9c5d3c440f4f840e4e2c1c7c540f9c140c4c1e3c140e6c9e3c840d4c1e7c9d4e4d440d3c5d5c7e3c840f2f5f540c2e8e3c5e26040f5f740f6f040f6f340f6f640f6f940f7f240f7f540f7f840f8f140f8f440f8f740f9f040f9f340f9f640f9f940f1f0f340f1f0f740f1f1f140f1f1f540f1f1f940f1f2f340f1f2f740f1f3f140f1f3f540f1f3f940f1f4f340f1f4f740f1f5f140f1f5f540f1f5f940f1f6f340f1f6f740f1f7f140f1f7f540f1f7f940f1f8f340f1f8f740f1f9f140f1f9f540f1f9f940f2f0f340f2f0f740f2f1f140f2f1f540f2f1f940f2f2f340f2f2f740f2f3f140f2f3f540f2f3f940f2f4f340f2f4f740f2f5f140f2f5f5</stringProp>
+              </elementProp>
+              <elementProp name="49" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="49">
+                <stringProp name="content">0608</stringProp>
+              </elementProp>
+              <elementProp name="55.1" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.1">
+                <stringProp name="content">01</stringProp>
+              </elementProp>
+              <elementProp name="55.2.1" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.1">
+                <stringProp name="content">204000</stringProp>
+                <stringProp name="tag">9f33</stringProp>
+              </elementProp>
+              <elementProp name="55.2.2" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.2">
+                <stringProp name="content">8000010000</stringProp>
+                <stringProp name="tag">95</stringProp>
+              </elementProp>
+              <elementProp name="55.2.3" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.3">
+                <stringProp name="content">74C81B00</stringProp>
+                <stringProp name="tag">9f37</stringProp>
+              </elementProp>
+              <elementProp name="55.2.4" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.4">
+                <stringProp name="content">06011203A0B000</stringProp>
+                <stringProp name="tag">9f10</stringProp>
+              </elementProp>
+              <elementProp name="55.2.5" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.5">
+                <stringProp name="content">F74F08D668F251EC</stringProp>
+                <stringProp name="tag">9f26</stringProp>
+              </elementProp>
+              <elementProp name="55.2.6" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.6">
+                <stringProp name="content">0002</stringProp>
+                <stringProp name="tag">9f36</stringProp>
+              </elementProp>
+              <elementProp name="55.2.7" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.7">
+                <stringProp name="content">0000</stringProp>
+                <stringProp name="tag">82</stringProp>
+              </elementProp>
+              <elementProp name="55.2.8" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.8">
+                <stringProp name="content">00</stringProp>
+                <stringProp name="tag">9c</stringProp>
+              </elementProp>
+              <elementProp name="55.2.9" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.9">
+                <stringProp name="content">0608</stringProp>
+                <stringProp name="tag">9f1a</stringProp>
+              </elementProp>
+              <elementProp name="55.2.10" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.10">
+                <stringProp name="content">240117</stringProp>
+                <stringProp name="tag">9a</stringProp>
+              </elementProp>
+              <elementProp name="55.2.11" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.11">
+                <stringProp name="content">000000012300</stringProp>
+                <stringProp name="tag">9f02</stringProp>
+              </elementProp>
+              <elementProp name="55.2.12" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.12">
+                <stringProp name="content">0608</stringProp>
+                <stringProp name="tag">5f2a</stringProp>
+              </elementProp>
+              <elementProp name="55.2.13" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.13">
+                <stringProp name="content">000000000000</stringProp>
+                <stringProp name="tag">9f03</stringProp>
+              </elementProp>
+              <elementProp name="55.2.14" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.14">
+                <stringProp name="content">a0000000031010</stringProp>
+                <stringProp name="tag">84</stringProp>
+              </elementProp>
+              <elementProp name="60" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="60">
+                <stringProp name="content">05000010</stringProp>
+              </elementProp>
+              <elementProp name="62" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="62">
+                <stringProp name="content">0000000000000000</stringProp>
+              </elementProp>
+              <elementProp name="63" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="63">
+                <stringProp name="content">8000000002</stringProp>
+              </elementProp>
+            </collectionProp>
+            <stringProp name="timeout">${__groovy(${dp_timeout}*1000,)}</stringProp>
+            <stringProp name="responseCodeField">39</stringProp>
+            <stringProp name="successResponseCode">00</stringProp>
+          </nz.co.breakpoint.jmeter.iso8583.ISO8583Sampler>
+          <hashTree>
+            <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="true">
+              <intProp name="calcMode">2</intProp>
+              <stringProp name="throughput">${__groovy(${SCR29_tps}*60,)}</stringProp>
+            </ConstantThroughputTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="FileWrite" enabled="false">
+          <stringProp name="cacheKey">false</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters">${__time(yyyyMMddHHmmssSSS,dc_timestamp)}</stringProp>
+          <stringProp name="script">import org.apache.jmeter.services.FileServer;
+def FilePath = vars.get(&quot;dp_filepath&quot;);
+def cardNo =vars.get(&quot;dp_cardno&quot;);
+def stan = vars.get(&quot;SCR29_dp_stan&quot;);
+def rrn = vars.get(&quot;SCR29_dp_rrn&quot;);
+long responseTime = prev.getTime();
+def timeStamp = vars.get(&quot;dc_timestamp&quot;);
+
+f = new FileOutputStream(FilePath +&quot;/Filewrite/SCR29_RequestIdentifiers&quot;+&quot;.txt&quot;,true);
+p = new PrintStream(f);
+p.println(timeStamp + &quot;,&quot; + cardNo+ &quot;,&quot; + stan +  &quot;,&quot; + rrn + &quot;,&quot;+ responseTime );
+f.close();</stringProp>
+          <stringProp name="scriptLanguage">groovy</stringProp>
+        </JSR223Sampler>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SCR30_VISA_DEBIT_ATM_WITHDRAWEL" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <intProp name="LoopController.loops">-1</intProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">${SCR30_users}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${dp_rampup}</stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">${dp_duration}</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
+        <boolProp name="ThreadGroup.delayedStart">false</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+          <stringProp name="delimiter">,</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="filename">${dp_filepath}/DataFile/SCR30_VISA_DEBIT_ATM_DataFile.txt</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="variableNames">dp_cardno,dp_expirey,dp_track2,dp_amount</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="SCR30_dp_stan" enabled="true">
+          <stringProp name="CounterConfig.start">${SCR30_dp_stanstart}</stringProp>
+          <stringProp name="CounterConfig.end">999999</stringProp>
+          <stringProp name="CounterConfig.incr">1</stringProp>
+          <stringProp name="CounterConfig.name">SCR30_dp_stan</stringProp>
+          <stringProp name="CounterConfig.format">000000</stringProp>
+          <boolProp name="CounterConfig.per_user">false</boolProp>
+        </CounterConfig>
+        <hashTree/>
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="SCR30_dp_rrn" enabled="true">
+          <stringProp name="CounterConfig.start">${SCR30_dp_rrnstart}</stringProp>
+          <stringProp name="CounterConfig.end">999999999999</stringProp>
+          <stringProp name="CounterConfig.incr">1</stringProp>
+          <stringProp name="CounterConfig.name">SCR30_dp_rrn</stringProp>
+          <stringProp name="CounterConfig.format">000000000000</stringProp>
+          <boolProp name="CounterConfig.per_user">false</boolProp>
+        </CounterConfig>
+        <hashTree/>
+        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once Only Controller" enabled="true"/>
+        <hashTree>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">${__groovy(${dp_waittime}*1000,)}</stringProp>
+          </TestAction>
+          <hashTree/>
+        </hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SCR30_T01_VISA _DEBIT_ATM_WITHDRAWL" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <nz.co.breakpoint.jmeter.iso8583.ISO8583Sampler guiclass="TestBeanGUI" testclass="nz.co.breakpoint.jmeter.iso8583.ISO8583Sampler" testname="SCR30_T01_R01_VISA -DEBIT_ATM_WITHDRAWL" enabled="true">
+            <stringProp name="configKey"></stringProp>
+            <stringProp name="header"></stringProp>
+            <stringProp name="trailer"></stringProp>
+            <collectionProp name="fields">
+              <elementProp name="0" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="0">
+                <stringProp name="content">0100</stringProp>
+              </elementProp>
+              <elementProp name="2" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="2">
+                <stringProp name="content">${dp_cardno}</stringProp>
+              </elementProp>
+              <elementProp name="3" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="3">
+                <stringProp name="content">010001</stringProp>
+              </elementProp>
+              <elementProp name="4" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="4">
+                <stringProp name="content">${dp_amount}</stringProp>
+              </elementProp>
+              <elementProp name="7" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="7">
+                <stringProp name="content">${__time(MMddHHmmss,)}</stringProp>
+              </elementProp>
+              <elementProp name="11" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="11">
+                <stringProp name="content">${SCR30_dp_stan}</stringProp>
+              </elementProp>
+              <elementProp name="12" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="12">
+                <stringProp name="content">${__time(HHmmss,)}</stringProp>
+              </elementProp>
+              <elementProp name="13" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="13">
+                <stringProp name="content">${__time(MMdd,)}</stringProp>
+              </elementProp>
+              <elementProp name="14" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="14">
+                <stringProp name="content">${dp_expirey}</stringProp>
+              </elementProp>
+              <elementProp name="18" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="18">
+                <stringProp name="content">6011</stringProp>
+              </elementProp>
+              <elementProp name="19" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="19">
+                <stringProp name="content">0608</stringProp>
+              </elementProp>
+              <elementProp name="22" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="22">
+                <stringProp name="content">0520</stringProp>
+              </elementProp>
+              <elementProp name="23" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="23">
+                <stringProp name="content">0001</stringProp>
+              </elementProp>
+              <elementProp name="25" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="25">
+                <stringProp name="content">02</stringProp>
+              </elementProp>
+              <elementProp name="28" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="28">
+                <stringProp name="content">D0000100</stringProp>
+              </elementProp>
+              <elementProp name="32" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="32">
+                <stringProp name="content">489012</stringProp>
+              </elementProp>
+              <elementProp name="35" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="35">
+                <stringProp name="content">${dp_track2}</stringProp>
+              </elementProp>
+              <elementProp name="37" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="37">
+                <stringProp name="content">${SCR30_dp_rrn}</stringProp>
+              </elementProp>
+              <elementProp name="41" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="41">
+                <stringProp name="content">ATM01</stringProp>
+              </elementProp>
+              <elementProp name="42" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="42">
+                <stringProp name="content">CARD ACCEPTOR  </stringProp>
+              </elementProp>
+              <elementProp name="43" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="43">
+                <stringProp name="content">ACQUIRER NAME CITY NAME PH</stringProp>
+              </elementProp>
+              <elementProp name="48" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="48">
+                <stringProp name="content">ff5cc6c9c5d3c440f4f840e4e2c1c7c540f240c4c1e3c140e6c9e3c840d4c1e7c9d4e4d440d3c5d5c7e3c840f2f5f540c2e8e3c5e2406040f5f740f6f040f6f340f6f640f6f940f7f240f7f540f7f840f8f140f8f440f8f740f9f040f9f340f9f640f9f940f1f0f340f1f0f740f1f1f140f1f1f540f1f1f940f1f2f340f1f2f740f1f3f140f1f3f540f1f3f940f1f4f340f1f4f740f1f5f140f1f5f540f1f5f940f1f6f340f1f6f740f1f7f140f1f7f540f1f7f940f1f8f340f1f8f740f1f9f140f1f9f540f1f9f940f2f0f340f2f0f740f2f1f140f2f1f540f2f1f940f2f2f340f2f2f740f2f3f140f2f3f540f2f3f940f2f4f340f2f4f740f2f5f140f2f5f5</stringProp>
+              </elementProp>
+              <elementProp name="49" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="49">
+                <stringProp name="content">0608</stringProp>
+              </elementProp>
+              <elementProp name="53" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="53">
+                <stringProp name="content">2001010100000000</stringProp>
+              </elementProp>
+              <elementProp name="55.1" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.1">
+                <stringProp name="content">01</stringProp>
+              </elementProp>
+              <elementProp name="55.2.1" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.1">
+                <stringProp name="tag">95</stringProp>
+                <stringProp name="content">8000010000</stringProp>
+              </elementProp>
+              <elementProp name="55.2.2" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.2">
+                <stringProp name="tag">9f37</stringProp>
+                <stringProp name="content">9badbcab</stringProp>
+              </elementProp>
+              <elementProp name="55.2.3" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.3">
+                <stringProp name="tag">9f10</stringProp>
+                <stringProp name="content">06011203a0b000</stringProp>
+              </elementProp>
+              <elementProp name="55.2.4" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.4">
+                <stringProp name="tag">9f26</stringProp>
+                <stringProp name="content">8249FD073142DF79</stringProp>
+              </elementProp>
+              <elementProp name="55.2.5" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.5">
+                <stringProp name="tag">9f36</stringProp>
+                <stringProp name="content">0003</stringProp>
+              </elementProp>
+              <elementProp name="55.2.6" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.6">
+                <stringProp name="tag">82</stringProp>
+                <stringProp name="content">0000</stringProp>
+              </elementProp>
+              <elementProp name="55.2.7" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.7">
+                <stringProp name="tag">9c</stringProp>
+                <stringProp name="content">01</stringProp>
+              </elementProp>
+              <elementProp name="55.2.8" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.8">
+                <stringProp name="tag">9f1a</stringProp>
+                <stringProp name="content">0608</stringProp>
+              </elementProp>
+              <elementProp name="55.2.9" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.9">
+                <stringProp name="tag">9a</stringProp>
+                <stringProp name="content">240117</stringProp>
+              </elementProp>
+              <elementProp name="55.2.10" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.10">
+                <stringProp name="tag">9f02</stringProp>
+                <stringProp name="content">000000012300</stringProp>
+              </elementProp>
+              <elementProp name="55.2.11" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.11">
+                <stringProp name="tag">5f2a</stringProp>
+                <stringProp name="content">0608</stringProp>
+              </elementProp>
+              <elementProp name="55.2.12" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.12">
+                <stringProp name="tag">9f03</stringProp>
+                <stringProp name="content">000000000000</stringProp>
+              </elementProp>
+              <elementProp name="55.2.13" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.13">
+                <stringProp name="tag">9f6e</stringProp>
+                <stringProp name="content">00000001</stringProp>
+              </elementProp>
+              <elementProp name="55.2.14" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="55.2.14">
+                <stringProp name="tag">84</stringProp>
+                <stringProp name="content">a0000000031010</stringProp>
+              </elementProp>
+              <elementProp name="60" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="60">
+                <stringProp name="content">25000010</stringProp>
+              </elementProp>
+              <elementProp name="62" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="62">
+                <stringProp name="content">8000000000000000e8</stringProp>
+              </elementProp>
+              <elementProp name="63" elementType="nz.co.breakpoint.jmeter.iso8583.MessageField" testname="63">
+                <stringProp name="content">8000000002</stringProp>
+              </elementProp>
+            </collectionProp>
+            <stringProp name="timeout">${__groovy(${dp_timeout}*1000,)}</stringProp>
+            <stringProp name="responseCodeField">39</stringProp>
+            <stringProp name="successResponseCode">00</stringProp>
+          </nz.co.breakpoint.jmeter.iso8583.ISO8583Sampler>
+          <hashTree>
+            <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="true">
+              <intProp name="calcMode">2</intProp>
+              <stringProp name="throughput">${__groovy(${SCR30_tps}*60,)}</stringProp>
+            </ConstantThroughputTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="FileWrite" enabled="false">
+          <stringProp name="cacheKey">false</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters">${__time(yyyyMMddHHmmssSSS,dc_timestamp)}</stringProp>
+          <stringProp name="script">import org.apache.jmeter.services.FileServer;
+def FilePath = vars.get(&quot;dp_filepath&quot;);
+def cardNo =vars.get(&quot;dp_cardno&quot;);
+def stan = vars.get(&quot;SCR30_dp_stan&quot;);
+def rrn = vars.get(&quot;SCR30_dp_rrn&quot;);
+long responseTime = prev.getTime();
+def timeStamp = vars.get(&quot;dc_timestamp&quot;);
+
+f = new FileOutputStream(FilePath +&quot;/Filewrite/SCR30_RequestIdentifiers&quot;+&quot;.txt&quot;,true);
+p = new PrintStream(f);
+p.println(timeStamp + &quot;,&quot; + cardNo+ &quot;,&quot; + stan +  &quot;,&quot; + rrn + &quot;,&quot;+ responseTime );
+f.close();</stringProp>
+          <stringProp name="scriptLanguage">groovy</stringProp>
+        </JSR223Sampler>
+        <hashTree/>
+      </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>true</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>true</responseData>
+            <samplerData>true</samplerData>
+            <xml>true</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>true</responseHeaders>
+            <requestHeaders>true</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <fileName>true</fileName>
+            <hostname>true</hostname>
+            <threadCounts>true</threadCounts>
+            <sampleCount>true</sampleCount>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+        <stringProp name="TestPlan.comments">${dp_filepath}\Result\VISA_CREDIT_VRT.csv</stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>true</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>true</responseData>
+            <samplerData>true</samplerData>
+            <xml>true</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>true</responseHeaders>
+            <requestHeaders>true</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <fileName>true</fileName>
+            <hostname>true</hostname>
+            <threadCounts>true</threadCounts>
+            <sampleCount>true</sampleCount>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+        <stringProp name="TestPlan.comments">${dp_filepath}\Result\VISA_CREDIT_ART.csv</stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

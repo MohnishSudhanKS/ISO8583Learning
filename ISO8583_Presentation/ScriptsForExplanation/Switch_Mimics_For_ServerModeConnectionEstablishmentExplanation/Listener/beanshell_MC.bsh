@@ -1,0 +1,5 @@
+if ("0800".equals(message.getMTI())) {
+message.setResponseMTI();
+message.unset(48);
+source.send(message);
+}

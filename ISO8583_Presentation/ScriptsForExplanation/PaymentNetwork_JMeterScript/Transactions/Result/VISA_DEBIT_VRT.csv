@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+
+
+
+<sample t="32009" it="25" lt="0" ct="0" ts="1710412944943" s="false" lb="SCR29_T01_VISA_DEBIT_POS_PURCHASE" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="SCR29_VISA_DEBIT_POS_PURCHASE 1-1" dt="" de="" by="0" sby="528" sc="1" ec="1" ng="1" na="1" hn="L-INE-3QMWM93">
+  <sample t="32009" it="0" lt="0" ct="0" ts="1710412944967" s="false" lb="SCR29_T01_R01_VISA_DEBIT_POS_PURCHASE" rc="" rm="Timeout" tn="SCR29_VISA_DEBIT_POS_PURCHASE 1-1" dt="text" de="" by="0" sby="528" sc="1" ec="1" ng="1" na="1" hn="L-INE-3QMWM93">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String">Host: 10.192.196.133
+Port: 8000</requestHeader>
+    <responseData class="java.lang.String"></responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">&lt;isomsg&gt;&#xd;
+  &lt;!-- org.jpos.iso.packager.GenericPackager[C:\PerfomanceTesting\Learning\IsoScript/Packager/UBP_VISA.xml] --&gt;&#xd;
+  &lt;field id=&quot;0&quot; value=&quot;0100&quot;/&gt;&#xd;
+  &lt;field id=&quot;2&quot; value=&quot;1234567898765432&quot;/&gt;&#xd;
+  &lt;field id=&quot;3&quot; value=&quot;000000&quot;/&gt;&#xd;
+  &lt;field id=&quot;4&quot; value=&quot;000000000100&quot;/&gt;&#xd;
+  &lt;field id=&quot;7&quot; value=&quot;0314161224&quot;/&gt;&#xd;
+  &lt;field id=&quot;11&quot; value=&quot;000000&quot;/&gt;&#xd;
+  &lt;field id=&quot;12&quot; value=&quot;161224&quot;/&gt;&#xd;
+  &lt;field id=&quot;13&quot; value=&quot;0314&quot;/&gt;&#xd;
+  &lt;field id=&quot;14&quot; value=&quot;2704&quot;/&gt;&#xd;
+  &lt;field id=&quot;18&quot; value=&quot;5411&quot;/&gt;&#xd;
+  &lt;field id=&quot;19&quot; value=&quot;0608&quot;/&gt;&#xd;
+  &lt;field id=&quot;22&quot; value=&quot;0520&quot;/&gt;&#xd;
+  &lt;field id=&quot;23&quot; value=&quot;0001&quot;/&gt;&#xd;
+  &lt;field id=&quot;25&quot; value=&quot;00&quot;/&gt;&#xd;
+  &lt;field id=&quot;32&quot; value=&quot;489012&quot;/&gt;&#xd;
+  &lt;field id=&quot;35&quot; value=&quot;1234567898765432=27041234567843216789&quot;/&gt;&#xd;
+  &lt;field id=&quot;37&quot; value=&quot;000000000000&quot;/&gt;&#xd;
+  &lt;field id=&quot;41&quot; value=&quot;7.1&quot;/&gt;&#xd;
+  &lt;field id=&quot;42&quot; value=&quot;CARD ACCEPTOR  &quot;/&gt;&#xd;
+  &lt;field id=&quot;43&quot; value=&quot;ACQUIRER NAME CITY NAME PH&quot;/&gt;&#xd;
+  &lt;field id=&quot;48&quot; value=&quot;FF5CC6C9C5D3C440F4F840E4E2C1C7C540F9C140C4C1E3C140E6C9E3C840D4C1E7C9D4E4D440D3C5D5C7E3C840F2F5F540C2E8E3C5E26040F5F740F6F040F6F340F6F640F6F940F7F240F7F540F7F840F8F140F8F440F8F740F9F040F9F340F9F640F9F940F1F0F340F1F0F740F1F1F140F1F1F540F1F1F940F1F2F340F1F2F740F1F3F140F1F3F540F1F3F940F1F4F340F1F4F740F1F5F140F1F5F540F1F5F940F1F6F340F1F6F740F1F7F140F1F7F540F1F7F940F1F8F340F1F8F740F1F9F140F1F9F540F1F9F940F2F0F340F2F0F740F2F1F140F2F1F540F2F1F940F2F2F340F2F2F740F2F3F140F2F3F540F2F3F940F2F4F340F2F4F740F2F5F140F2F5F5&quot; type=&quot;binary&quot;/&gt;&#xd;
+  &lt;field id=&quot;49&quot; value=&quot;0608&quot;/&gt;&#xd;
+  &lt;isomsg id=&quot;55&quot;&gt;&#xd;
+    &lt;field id=&quot;1&quot; value=&quot;01&quot; type=&quot;binary&quot;/&gt;&#xd;
+    &lt;isomsg id=&quot;2&quot;&gt;&#xd;
+      &lt;9f33&gt;&lt;field id=&quot;1&quot; value=&quot;204000&quot; type=&quot;binary&quot;/&gt;&lt;/9f33&gt;
+      &lt;95&gt;&lt;field id=&quot;2&quot; value=&quot;8000010000&quot; type=&quot;binary&quot;/&gt;&lt;/95&gt;
+      &lt;9f37&gt;&lt;field id=&quot;3&quot; value=&quot;74C81B00&quot; type=&quot;binary&quot;/&gt;&lt;/9f37&gt;
+      &lt;9f10&gt;&lt;field id=&quot;4&quot; value=&quot;06011203A0B000&quot; type=&quot;binary&quot;/&gt;&lt;/9f10&gt;
+      &lt;9f26&gt;&lt;field id=&quot;5&quot; value=&quot;F74F08D668F251EC&quot; type=&quot;binary&quot;/&gt;&lt;/9f26&gt;
+      &lt;9f36&gt;&lt;field id=&quot;6&quot; value=&quot;0002&quot; type=&quot;binary&quot;/&gt;&lt;/9f36&gt;
+      &lt;82&gt;&lt;field id=&quot;7&quot; value=&quot;0000&quot; type=&quot;binary&quot;/&gt;&lt;/82&gt;
+      &lt;9c&gt;&lt;field id=&quot;8&quot; value=&quot;00&quot;/&gt;&lt;/9c&gt;
+      &lt;9f1a&gt;&lt;field id=&quot;9&quot; value=&quot;0608&quot;/&gt;&lt;/9f1a&gt;
+      &lt;9a&gt;&lt;field id=&quot;10&quot; value=&quot;240117&quot;/&gt;&lt;/9a&gt;
+      &lt;9f02&gt;&lt;field id=&quot;11&quot; value=&quot;000000012300&quot;/&gt;&lt;/9f02&gt;
+      &lt;5f2a&gt;&lt;field id=&quot;12&quot; value=&quot;0608&quot;/&gt;&lt;/5f2a&gt;
+      &lt;9f03&gt;&lt;field id=&quot;13&quot; value=&quot;000000000000&quot;/&gt;&lt;/9f03&gt;
+      &lt;84&gt;&lt;field id=&quot;14&quot; value=&quot;A0000000031010&quot; type=&quot;binary&quot;/&gt;&lt;/84&gt;
+    &lt;/isomsg&gt;&#xd;
+  &lt;/isomsg&gt;&#xd;
+  &lt;field id=&quot;60&quot; value=&quot;05000010&quot; type=&quot;binary&quot;/&gt;&#xd;
+  &lt;field id=&quot;62&quot; value=&quot;0000000000000000&quot; type=&quot;binary&quot;/&gt;&#xd;
+  &lt;field id=&quot;63&quot; value=&quot;8000000002&quot; type=&quot;binary&quot;/&gt;&#xd;
+&lt;/isomsg&gt;&#xd;
+
+&lt;!--
+0000  01 00 72 3C 66 81 28 E1  82 16 10 12 34 56 78 98  ..r&lt;f.(.....4Vx.&#xd;
+0010  76 54 32 00 00 00 00 00  00 00 01 00 03 14 16 12  vT2.............&#xd;
+0020  24 00 00 00 16 12 24 03  14 27 04 54 11 06 08 05  $.....$..&apos;.T....&#xd;
+0030  20 00 01 00 06 48 90 12  25 01 23 45 67 89 87 65   ....H..%.#Eg..e&#xd;
+0040  43 2D 27 04 12 34 56 78  43 21 67 89 F0 F0 F0 F0  C-&apos;..4VxC!g.....&#xd;
+0050  F0 F0 F0 F0 F0 F0 F0 F0  F7 4B F1 40 40 40 40 40  .........K.@@@@@&#xd;
+0060  C3 C1 D9 C4 40 C1 C3 C3  C5 D7 E3 D6 D9 40 40 C1  ....@........@@.&#xd;
+0070  C3 D8 E4 C9 D9 C5 D9 40  D5 C1 D4 C5 40 C3 C9 E3  .......@....@...&#xd;
+0080  E8 40 D5 C1 D4 C5 40 D7  C8 40 40 40 40 40 40 40  .@....@..@@@@@@@&#xd;
+0090  40 40 40 40 40 40 40 FF  5C C6 C9 C5 D3 C4 40 F4  @@@@@@@.\.....@.&#xd;
+00a0  F8 40 E4 E2 C1 C7 C5 40  F9 C1 40 C4 C1 E3 C1 40  .@.....@..@....@&#xd;
+00b0  E6 C9 E3 C8 40 D4 C1 E7  C9 D4 E4 D4 40 D3 C5 D5  ....@.......@...&#xd;
+00c0  C7 E3 C8 40 F2 F5 F5 40  C2 E8 E3 C5 E2 60 40 F5  ...@...@.....`@.&#xd;
+00d0  F7 40 F6 F0 40 F6 F3 40  F6 F6 40 F6 F9 40 F7 F2  .@..@..@..@..@..&#xd;
+00e0  40 F7 F5 40 F7 F8 40 F8  F1 40 F8 F4 40 F8 F7 40  @..@..@..@..@..@&#xd;
+00f0  F9 F0 40 F9 F3 40 F9 F6  40 F9 F9 40 F1 F0 F3 40  ..@..@..@..@...@&#xd;
+0100  F1 F0 F7 40 F1 F1 F1 40  F1 F1 F5 40 F1 F1 F9 40  ...@...@...@...@&#xd;
+0110  F1 F2 F3 40 F1 F2 F7 40  F1 F3 F1 40 F1 F3 F5 40  ...@...@...@...@&#xd;
+0120  F1 F3 F9 40 F1 F4 F3 40  F1 F4 F7 40 F1 F5 F1 40  ...@...@...@...@&#xd;
+0130  F1 F5 F5 40 F1 F5 F9 40  F1 F6 F3 40 F1 F6 F7 40  ...@...@...@...@&#xd;
+0140  F1 F7 F1 40 F1 F7 F5 40  F1 F7 F9 40 F1 F8 F3 40  ...@...@...@...@&#xd;
+0150  F1 F8 F7 40 F1 F9 F1 40  F1 F9 F5 40 F1 F9 F9 40  ...@...@...@...@&#xd;
+0160  F2 F0 F3 40 F2 F0 F7 40  F2 F1 F1 40 F2 F1 F5 40  ...@...@...@...@&#xd;
+0170  F2 F1 F9 40 F2 F2 F3 40  F2 F2 F7 40 F2 F3 F1 40  ...@...@...@...@&#xd;
+0180  F2 F3 F5 40 F2 F3 F9 40  F2 F4 F3 40 F2 F4 F7 40  ...@...@...@...@&#xd;
+0190  F2 F5 F1 40 F2 F5 F5 06  08 62 01 00 5F 9F 33 03  ...@.....b.._.3.&#xd;
+01a0  20 40 00 95 05 80 00 01  00 00 9F 37 04 74 C8 1B   @.........7.t..&#xd;
+01b0  00 9F 10 07 06 01 12 03  A0 B0 00 9F 26 08 F7 4F  ............&amp;..O&#xd;
+01c0  08 D6 68 F2 51 EC 9F 36  02 00 02 82 02 00 00 9C  ..h.Q..6........&#xd;
+01d0  01 00 9F 1A 02 06 08 9A  03 24 01 17 9F 02 06 00  .........$......&#xd;
+01e0  00 00 01 23 00 5F 2A 02  06 08 9F 03 06 00 00 00  ...#._*.........&#xd;
+01f0  00 00 00 84 07 A0 00 00  00 03 10 10 04 05 00 00  ................&#xd;
+0200  10 08 00 00 00 00 00 00  00 00 05 80 00 00 00 02  ................&#xd;
+--&gt;</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+</sample>
+<sample t="153" it="0" lt="0" ct="0" ts="1710412976981" s="false" lb="FileWrite" rc="500" rm="javax.script.ScriptException: javax.script.ScriptException: java.io.FileNotFoundException: C:\PerfomanceTesting\Learning\IsoScript\Filewrite\SCR29_RequestIdentifiers.txt (The system cannot find the path specified)" tn="SCR29_VISA_DEBIT_POS_PURCHASE 1-1" dt="text" de="" by="0" sby="0" sc="1" ec="1" ng="1" na="1" hn="L-INE-3QMWM93">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">import org.apache.jmeter.services.FileServer;
+def FilePath = vars.get(&quot;dp_filepath&quot;);
+def cardNo =vars.get(&quot;dp_cardno&quot;);
+def stan = vars.get(&quot;SCR29_dp_stan&quot;);
+def rrn = vars.get(&quot;SCR29_dp_rrn&quot;);
+long responseTime = prev.getTime();
+def timeStamp = vars.get(&quot;dc_timestamp&quot;);
+
+f = new FileOutputStream(FilePath +&quot;/Filewrite/SCR29_RequestIdentifiers&quot;+&quot;.txt&quot;,true);
+p = new PrintStream(f);
+p.println(timeStamp + &quot;,&quot; + cardNo+ &quot;,&quot; + stan +  &quot;,&quot; + rrn + &quot;,&quot;+ responseTime );
+f.close();</samplerData>
+</sample>
+
+</testResults>

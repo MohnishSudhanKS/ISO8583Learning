@@ -1,0 +1,21 @@
+ISO Explained in LayMan Terms
+
+ISO 8583 is like a standardized language that banks and payment systems use to talk to each other when processing transactions, such as when you use your credit or debit card to buy something.
+
+Imagine you're at a busy restaurant, and you want to place an order with the waiter. You tell the waiter what you want to eat, and the waiter takes down your order. Then, the waiter goes to the kitchen and gives the chef your order, who prepares your food accordingly. Once your food is ready, the waiter brings it back to you.
+
+In the world of banking and payments, ISO 8583 works similarly:
+
+1. **You (the Customer):** You're like the customer at the restaurant who wants to make a transaction, like buying something with your card.
+  
+2. **The Point-of-Sale (POS) Terminal or ATM:** This is like the waiter at the restaurant. It's the device you use to input your card details and make the transaction.
+
+3. **The Bank:** The bank is like the kitchen in the restaurant. It's where your transaction request gets processed.
+
+4. **ISO 8583:** ISO 8583 acts like the standard order form or language used by the waiter (POS terminal) to communicate your transaction details to the bank (kitchen). It specifies exactly how the information should be formatted and what details need to be included in the transaction request.
+
+5. **Transaction Processing:** Once the bank (kitchen) receives your transaction request in the ISO 8583 format, it processes it, checks if you have enough funds, and authorizes the transaction.
+
+6. **Response:** Just like the waiter (POS terminal) brings your food back to you, the bank sends a response back to the POS terminal, indicating whether your transaction was approved or declined.
+
+So, ISO 8583 is essentially a set of rules and guidelines that ensure all parties involved in a transaction—like your bank, the merchant, and the payment network—speak the same language and understand each other's requests and responses when processing payments. It helps make sure your transactions are secure, reliable, and standardized, no matter where you use your card.

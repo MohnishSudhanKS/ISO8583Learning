@@ -1,0 +1,56 @@
+
+
+### On-Us Transaction Flow:
+
+
+    Customer (Bank A)               Bank A
+        |                              |
+        | <--- Withdraw $100 ---       |
+        |                              |
+        | --- Withdrawal Approved ---> |
+        |                              |
+        | --- Dispense $100 --->       |
+        |                              |
+        | <--- Transaction Receipt --- |
+        |                              |
+
+
+1. Customer (Bank A): The customer initiates a withdrawal transaction at an ATM owned by Bank A.
+   
+2. Bank A: Bank A processes the withdrawal request internally since the transaction is within its own network (on-us).
+   
+3. Withdrawal Approved: Bank A approves the withdrawal request since it's within its own network, and the requested amount is within the customer's account balance.
+   
+4. Dispense $100: The ATM dispenses $100 cash to the customer.
+   
+5. Transaction Receipt: Bank A prints a transaction receipt for the customer, confirming the successful withdrawal.
+
+### Off-Us Transaction Flow:
+
+    Customer (Bank A)                 Bank A                          Bank B
+        |                              |                                 |
+        | <--- Withdraw $100 ---       |                                 |
+        |                              |                                 |
+        | --- Forward Request --->     |                                 |
+        |                              |                                 |
+        |                              | --- Process Request --->        |
+        |                              |                                 |
+        |                              | <--- Authorization Response --- |
+        |                              |                                 |
+        |                              | --- Dispense $100 --->          |
+        |                              |                                 |
+        | <--- Transaction Receipt --- |                                 |
+        |                              |                                 |
+
+
+1. Customer (Bank A): The customer initiates a withdrawal transaction at an ATM owned by Bank B (a different bank).
+   
+2. Bank A: Bank A forwards the withdrawal request to Bank B since it's an off-us transaction.
+   
+3. Bank B: Bank B receives the withdrawal request and processes it.
+   
+4. Authorization Response: Bank B sends an authorization response back to Bank A, approving or declining the withdrawal request.
+   
+5. Dispense $100: Bank A receives the authorization response and dispenses $100 cash to the customer if the request is approved.
+   
+6. Transaction Receipt: Bank A prints a transaction receipt for the customer, confirming the successful withdrawal.

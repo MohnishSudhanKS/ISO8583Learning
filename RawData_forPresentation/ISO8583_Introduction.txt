@@ -1,0 +1,10 @@
+Introduction To ISO      
+
+
+ISO 8583 is an international standard for financial transaction card originated interchange messaging. It specifies a message format used by financial institutions, such as banks and payment processors, to exchange electronic transactions. This standard defines the structure, content, and rules for messages exchanged between devices, such as point-of-sale (POS) terminals, automated teller machines (ATMs), and financial institutions' computer systems, during the authorization and processing of payment transactions.
+
+ISO 8583 messages typically include information such as the type of transaction (e.g., sale, authorization, reversal), cardholder account details (e.g., card number, expiry date), transaction amount, terminal information, and authorization response codes. The format of ISO 8583 messages is highly flexible and can be customized to accommodate various types of transactions and data elements.
+
+This standard is crucial for ensuring interoperability and consistency in electronic payment systems, allowing different banks, payment networks, and financial institutions to communicate effectively and process transactions securely. It helps facilitate the authorization, clearing, and settlement of payment transactions, contributing to the smooth operation of the global financial system.
+
+In summary, ISO 8583 is a standardized message format for financial transactions, providing a common language for communication between different entities involved in electronic payment processing. It plays a fundamental role in ensuring the reliability, security, and efficiency of electronic payment systems worldwide.

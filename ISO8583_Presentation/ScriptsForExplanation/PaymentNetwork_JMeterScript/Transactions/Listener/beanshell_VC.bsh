@@ -1,0 +1,6 @@
+if ("0800".equals(message.getMTI()) && "0071".equals(message.getValue(70))) {
+message.setResponseMTI();
+message.set(39, "00");
+message.set(63, "000000");
+source.send(message);
+}
